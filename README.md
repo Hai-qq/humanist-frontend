@@ -1,127 +1,107 @@
-# Humanist Frontend
+<p align="center">
+  <img src="docs/assets/logo.png" width="112" height="112" alt="Humanist Frontend：带陶土色折角的小写 h 标识">
+</p>
 
-面向 Agent 的前端设计规范与 Skill。参考 Anthropic / Claude / Kimi 的公开设计资料，形成适合阅读、研究、创作与软件工作台的原创实施规则。
+<h1 align="center">Humanist Frontend</h1>
 
-本项目是独立规范，与参考品牌无官方隶属关系。默认尊重已有设计系统；新项目可选择温暖阅读型 `editorial-warm` 或清晰轻盈型 `precise-light`。强调信息层级、组件状态、真实反馈、中文排版与可验证实现。
+<p align="center"><strong>让 Agent 写出的界面，更适合人使用。</strong></p>
+<p align="center">前端设计 Skill · 中文排版 · 真实交互 · 两套可选主题</p>
 
-版本：**0.2.0**。资料快照与整合日期：2026-09-08。
+<p align="center">
+  <a href="https://github.com/Hai-qq/humanist-frontend/actions/workflows/validate.yml"><img src="https://github.com/Hai-qq/humanist-frontend/actions/workflows/validate.yml/badge.svg" alt="包检查状态"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-625E56?style=flat" alt="MIT License"></a>
+  <a href="https://github.com/Hai-qq/humanist-frontend/releases"><img src="https://img.shields.io/github/v/release/Hai-qq/humanist-frontend?color=A64B32&amp;label=release" alt="最新版本"></a>
+</p>
 
-## 使用入口
+<p align="center">
+  <a href="#快速开始">快速开始</a> ·
+  <a href="DESIGN_SPEC.md">设计规范</a> ·
+  <a href="https://github.com/Hai-qq/humanist-frontend/releases/latest">下载 Skill</a> ·
+  <a href="CONTRIBUTING.md">参与贡献</a>
+</p>
 
-| 需要 | 入口 |
+---
+
+Humanist Frontend 是一套面向编码 Agent 的设计规范和可安装 Skill，适合阅读页、研究工具、创作界面与软件工作台。参考 Anthropic、Claude 和 Kimi 的公开设计资料，关注信息层级、中文排版与可恢复的交互。
+
+**已有项目沿用原设计系统；新项目按需要选择主题。** 无需 API Key，也不要求换框架。
+
+## 两种方向，同一套交互原则
+
+![两套主题的静态示意：温暖阅读型与清晰轻盈型，使用仓库实际浅色色值。](docs/assets/themes.svg)
+
+| 温暖阅读型 · `editorial-warm` | 清晰轻盈型 · `precise-light` |
 |---|---|
-| 让 Agent 执行 | [Skill](skills/humanist-frontend/SKILL.md) |
-| 阅读或修改规范 | [完整规范](DESIGN_SPEC.md) |
-| 安装与升级 | [安装说明](docs/INSTALL.md) |
-| 核对设计依据 | [证据与决策](research/EVIDENCE_AND_DECISIONS.md) / [来源记录](research/SOURCE_AUDIT.md) |
-| 检查本包质量 | [本地复验与内容审查](reports/OPEN_SOURCE_REVIEW.md) / [评估场景](evals/README.md) |
+| 纸色背景、温暖强调、舒展的阅读层次 | 轻盈中性色、蓝色操作、清晰的工作区 |
+| 适合长文、笔记与研究阅读 | 适合编辑器、设置与任务工作台 |
 
-## 安装到项目
+预览为静态设计示意，不是已实现的应用。两套主题均附明暗色值；[查看 token 用法](docs/TOKENS.md)。
 
-复制整个 `skills/humanist-frontend/`，不要只复制 SKILL.md，否则会丢失按需读取的规范与资产。静态指导无需 API Key、网络服务或新前端框架。
+## 它会帮助 Agent 做什么
 
-先获取仓库：
+- **按内容设计**：区分阅读页、工作台和事务页，用真实长文本检验布局。
+- **处理真实状态**：保存失败保留输入，旧请求不覆盖新对象，取消状态以实际结果为准。
+- **照顾中文使用**：检查中英混排、长文件名、组合输入与键盘操作。
+- **按需读取规范**：入口保持简短，字体、组件、工程和验收细则分别加载。
+
+## 快速开始
+
+需要 Python 3.10+。先下载源码：
 
 ```bash
 git clone https://github.com/Hai-qq/humanist-frontend.git
 cd humanist-frontend
 ```
 
-在本仓库运行，目标必须是已经存在的项目目录：
+选择你的工具，将 `/path/to/project` 换成已有项目目录：
 
 ```bash
-# 任选目标工具；安装器只复制本地文件，不运行网络命令、不覆盖已有目录。
-python scripts/install_skill.py --host codex --project /path/to/project
-python scripts/install_skill.py --host claude --project /path/to/project
-python scripts/install_skill.py --host kimi --project /path/to/project
+# Codex
+python3 scripts/install_skill.py --host codex --project /path/to/project
+
+# Claude Code
+python3 scripts/install_skill.py --host claude --project /path/to/project
+
+# Kimi CLI
+python3 scripts/install_skill.py --host kimi --project /path/to/project
 ```
 
-分别复制到项目的 `.agents/skills/`、`.claude/skills/`、`.kimi/skills/`。目录依据相关官方文档；这是静态文件安装支持，不是本包已经在每个宿主完成了实机认证。加载后检查工具自己的 Skill 列表；企业策略、工作区信任和宿主版本可能影响启用。
+安装器只复制本地文件，拒绝覆盖已有 Skill。安装后在宿主工具中检查是否加载。[手动安装与升级 →](docs/INSTALL.md)
 
-官方目录说明：[Codex](https://learn.chatgpt.com/docs/build-skills)、[Claude Code](https://code.claude.com/docs/en/skills)、[Kimi CLI](https://moonshotai.github.io/kimi-cli/en/customization/skills.html)。
-
-其他 Agent 可直接读取 `SKILL.md` 并跟随相对路径；不保证它们都自动识别相同目录或命令。未授权时，Agent 不应自行修改用户全局配置或发布仓库。
-
-## 调用示例
+然后在项目里告诉 Agent：
 
 ```text
 使用 humanist-frontend，为当前项目实现中文研究笔记工作台。
-先读取现有项目规则与组件；已有主题优先。
-只修改笔记列表、编辑器和保存反馈，不修改权限或后端接口。
-完成实际代码与可运行的检查，明确哪些视觉或交互未能验证。
+沿用现有组件与主题，只修改笔记列表、编辑器和保存反馈。
+完成实现并检查主要操作路径，说明未验证项。
 ```
 
-```text
-使用 humanist-frontend 审查当前设置页，不修改代码。
-重点看中英文长文本、键盘焦点、错误后恢复和视觉层级。
-给出可复现的问题，不把个人风格偏好当成缺陷。
-```
+只需审查时，可以说：`使用 humanist-frontend 审查当前设置页，不修改代码。`
 
-自然语言也可以触发；具体选择和命令由宿主决定。本 Skill 不要求绑定某个模型版本。
+## 文档导航
 
-## 使用原创 token
+| 你想做什么 | 去哪里 |
+|---|---|
+| 直接使用 Skill | [Skill 入口](skills/humanist-frontend/SKILL.md) |
+| 通读设计规则 | [完整设计规范](DESIGN_SPEC.md) |
+| 接入颜色、字体和主题 | [Token 使用](docs/TOKENS.md) |
+| 了解规则为什么这样定 | [证据与决策](research/EVIDENCE_AND_DECISIONS.md) |
+| 核对来源和阅读范围 | [来源记录](research/SOURCE_AUDIT.md) |
+| 修改、检查或打包 | [开发指南](docs/DEVELOPMENT.md) |
+| 查看变化 | [更新记录](CHANGELOG.md) |
 
-只在新建或已授权改版时导入；已有系统建议做语义映射而非覆盖。
+## 质量与边界
 
-```html
-<html lang="zh-CN" data-hf-profile="editorial-warm" data-theme="light">
-  <!-- 引入项目实际位置下的 tokens.css -->
-</html>
-```
+包检查覆盖生成物同步、文件与引用、安装和打包；当前包含 **47 项测试**与 **88 个不透明色对检查**。[复验报告](reports/OPEN_SOURCE_REVIEW.md)
 
-```css
-.workspace {
-  background: var(--hf-canvas);
-  color: var(--hf-text);
-  font-family: var(--hf-font-ui);
-}
-.primary-action {
-  background: var(--hf-action);
-  color: var(--hf-on-action);
-}
-```
+18 个 Agent 评估场景尚未执行；包检查不代表宿主实机认证、页面视觉验收或整页 WCAG 合规。[评估协议](evals/README.md)
 
-品牌色与操作色分开；`border-subtle` 只用于非必要分隔，输入轮廓使用 `border-control`。默认 2 种方向 × 明暗 2 种模式；没有要求暗色的项目不必额外增加维护范围。这些是原创实现起点，不是官方精确抽取值，也不宣称完整 DTCG 兼容。
+## 一起改进
 
-## 本地验证
+欢迎提交真实项目中遇到的问题、可复现的交互缺陷和有依据的规则改进。
 
-Python 3.10+；脚本只使用标准库。以下操作只检查本包，不运行第三方安装器：
+[报告问题](https://github.com/Hai-qq/humanist-frontend/issues/new) · [贡献约定](CONTRIBUTING.md) · [项目视觉标识](docs/BRAND.md)
 
-```bash
-python scripts/build_sources.py --check
-python scripts/build_spec.py --check
-python scripts/build_tokens.py --check
-python scripts/validate_package.py
-python -m unittest discover -s tests -v
-python skills/humanist-frontend/scripts/check_contrast.py
-```
+---
 
-修改 JSON 后先执行 `python scripts/build_tokens.py` 更新 CSS。对比度脚本只检查列明的不透明 sRGB 色对，不能证明整页 WCAG 合规。
-
-## 来源与验证范围
-
-来源台账保留 50 条资料记录，并区分正文、节选、未取得材料与共同来源；详见 [覆盖统计](research/coverage.json) 和 [来源记录](research/SOURCE_AUDIT.md)。这些是随包研究记录，本次发布仅抽查部分公开页面，未重新核验全部资料。规范中的主题数值属于原创默认，不代表官方 token。
-
-本地检查覆盖结构、生成物一致性、安装、打包及列明的 88 个纯色色对。18 个 Agent 评估场景尚未执行，也未完成宿主实机加载、下游页面视觉、真实输入法或读屏测试。不能据此宣称视觉质量提升或整页 WCAG 合规。
-
-版本变化见 [CHANGELOG](CHANGELOG.md)，补读整合过程见 [合并说明](docs/MERGE_NOTES.md)，历史材料保留在 [研究归档](research/history/README.md)。
-
-## 本地重新打包
-
-完成上面的检查后，运行：
-
-```bash
-python scripts/build_release.py --output ../releases
-```
-
-输出完整仓库 ZIP、独立 Skill ZIP 与外部 SHA-256 校验文件。两个 ZIP 各带逐文件 `SHA256SUMS`。默认拒绝覆盖；只有确实需要覆盖同名产物时才加 `--overwrite`。输出目录必须在源码目录之外。
-
-同一源码快照、Python/zlib 环境下打包使用固定文件顺序与时间字段；日志变动会正常改变校验值。打包脚本本身不替代测试、浏览器验收或宿主加载。
-
-## 维护
-
-修改规范的权威入口为 `skills/humanist-frontend/references/01-05`；`DESIGN_SPEC.md` 是便于通读的汇编。更新后运行 `python scripts/build_spec.py`。来源以 `research/sources.json` 为入口，运行 `python scripts/build_sources.py` 同步当前审计、覆盖统计和独立 Skill 的来源文件。不要形成内容矛盾的两份规范。
-
-来源更新可能改变建议；新增规则需交代适用范围、证据或原创假设和验收方法。新增字体/图标/截图/第三方代码须核对许可，不能直接复制品牌资产。
-
-原创部分使用 [MIT](LICENSE)，第三方名称与素材的边界见 [声明](THIRD_PARTY_NOTICES.md)。
+原创部分采用 [MIT License](LICENSE)。本项目与 Anthropic、Claude、Kimi 无官方隶属关系；第三方品牌与素材说明见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md)。

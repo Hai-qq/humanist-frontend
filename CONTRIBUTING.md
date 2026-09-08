@@ -2,7 +2,7 @@
 
 优先提交可复现的问题和有明确适用边界的规则。请说明项目类型、任务、原有约束、实际行为与期望结果，不只用“看起来高级/普通”评价。
 
-文档修改以 Skill references 为权威入口，再运行 scripts/build_spec.py。token 修改以 JSON 为入口，生成 CSS 并运行列明色对检查。提交前运行 README 的验证命令，记录未运行的检查。
+文档修改以 Skill references 为权威入口，再运行 scripts/build_spec.py。token 修改以 JSON 为入口，生成 CSS 并运行列明色对检查。提交前运行 [开发指南](docs/DEVELOPMENT.md)的验证命令，记录未运行的检查。
 
 新增来源要注明官方/一手/社区性质、读取日期、实际阅读范围和访问限制；重复转载不作为独立证据。新的自动化测试只能声明它真实检查的内容，不把它扩张为完整前端或多模型质量认证。
 
@@ -14,6 +14,8 @@
 文档中的扩展来源编号可使用 A7-C1、K10-R1 等形式。新增规范规则应关联适用范围与评估场景；增量追踪记录在 research/rule_traceability.json。
 历史输入按原字节归档，不为了改善阅读覆盖率重写历史。无法读取的正文、未经画面核验的视频及待执行 Agent 场景要保留真实状态。
 
-发布前运行 README 的所有检查，再执行 scripts/build_release.py；归档哈希和场景结构测试不证明对应 UI 行为已通过。
+发布前运行 [开发指南](docs/DEVELOPMENT.md)的所有检查，再执行 scripts/build_release.py；归档哈希和场景结构测试不证明对应 UI 行为已通过。
 
 GitHub Actions 在 Python 3.10 和 3.13 上执行上述包检查与打包冒烟检查。CI 不运行 Agent 评估或浏览器验收。
+
+首页视觉资产位于 docs/assets，使用约定见 [视觉标识](docs/BRAND.md)。更新首页时保留可读文字、图片替代文本和直接安装入口。
