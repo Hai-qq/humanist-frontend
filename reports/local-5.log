@@ -1,0 +1,52 @@
+test_archives_are_deterministic_for_same_tree (test_integration.ArchiveTests) ... ok
+test_both_zip_manifests_match_every_payload_file (test_integration.ArchiveTests) ... ok
+test_local_caches_and_environment_files_are_excluded (test_integration.ArchiveTests) ... ok
+test_release_never_silently_overwrites (test_integration.ArchiveTests) ... ok
+test_release_output_cannot_be_inside_source (test_integration.ArchiveTests) ... ok
+test_release_rejects_font_files (test_integration.ArchiveTests) ... ok
+test_release_rejects_symlinks (test_integration.ArchiveTests) ... ok
+test_standalone_skill_matches_nested_skill (test_integration.ArchiveTests) ... ok
+test_clips_keep_same_parent_and_no_invented_timestamps (test_integration.SourceIntegrationTests) ... ok
+test_compilation_does_not_upgrade_original_article (test_integration.SourceIntegrationTests) ... ok
+test_conflicting_reference_definitions_fail_build (test_integration.SourceIntegrationTests) ... ok
+test_evaluations_remain_unexecuted (test_integration.SourceIntegrationTests) ... ok
+test_extended_source_ids_resolve_in_spec (test_integration.SourceIntegrationTests) ... ok
+test_full_interviews_still_partial (test_integration.SourceIntegrationTests) ... ok
+test_generated_coverage_matches (test_integration.SourceIntegrationTests) ... ok
+test_generated_source_audit_matches (test_integration.SourceIntegrationTests) ... ok
+test_historical_hash_change_is_detected (test_integration.SourceIntegrationTests) ... ok
+test_new_rules_and_case_links_exist (test_integration.SourceIntegrationTests) ... ok
+test_original_32_entries_retained_with_scoped_statuses (test_integration.SourceIntegrationTests) ... ok
+test_partial_source_cannot_be_promoted_to_normative (test_integration.SourceIntegrationTests) ... ok
+test_unknown_trace_source_is_detected (test_integration.SourceIntegrationTests) ... ok
+test_unresolved_extended_citation_is_detected (test_integration.SourceIntegrationTests) ... ok
+test_version_drift_is_detected (test_integration.SourceIntegrationTests) ... ok
+test_all_declared_pairs (test_package.ContrastTests) ... ok
+test_black_white (test_package.ContrastTests) ... ok
+test_brand_blue_not_normal_white_text (test_package.ContrastTests) ... ok
+test_comparison_not_rounded (test_package.ContrastTests) ... ok
+test_empty_pairs_rejected (test_package.ContrastTests) ... ok
+test_invalid_colors (test_package.ContrastTests) ... ok
+test_invalid_threshold_rejected (test_package.ContrastTests) ... ok
+test_known_reference (test_package.ContrastTests) ... ok
+test_non_object_mode_rejected (test_package.ContrastTests) ... ok
+test_non_object_root_rejected (test_package.ContrastTests) ... ok
+test_same_color (test_package.ContrastTests) ... ok
+test_symmetry (test_package.ContrastTests) ... ok
+test_unknown_token_rejected (test_package.ContrastTests) ... ok
+test_wrong_schema_rejected (test_package.ContrastTests) ... ok
+test_cli_invalid_input_exit_code (test_package.PackageTests) ... ok
+test_cli_json_output (test_package.PackageTests) ... ok
+test_external_symlink_parent_rejected (test_package.PackageTests) ... ok
+test_generated_css_is_current (test_package.PackageTests) ... ok
+test_generated_spec_is_current (test_package.PackageTests) ... ok
+test_installer_copies_self_contained_skill (test_package.PackageTests) ... ok
+test_installer_never_overwrites (test_package.PackageTests) ... ok
+test_missing_project_rejected (test_package.PackageTests) ... ok
+test_package_links_and_metadata (test_package.PackageTests) ... ok
+test_theme_key_parity (test_package.PackageTests) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.391s
+
+OK

@@ -1,0 +1,24 @@
+name: Validate package
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Validate generated files and package
+        run: |
+          python scripts/build_sources.py --check
+          python scripts/build_spec.py --check
+          python scripts/build_tokens.py --check
+          python scripts/validate_package.py
+          python -m unittest discover -s tests -v
+          python skills/humanist-frontend/scripts/check_contrast.py
+          python scripts/build_release.py --output ../release-check

@@ -1,0 +1,90 @@
+{
+  "version": "0.2.0",
+  "scope": "new-or-expanded-rules-in-this-release",
+  "verification_status": "agent-scenarios-not-run",
+  "rules": [
+    {
+      "rule_id": "CTX-06",
+      "title": "用任务样例检验设计判断",
+      "source_ids": [
+        "A7-C1",
+        "A7-C2"
+      ],
+      "basis": "design-inference",
+      "scope": "设计方向需要落实到真实任务时；局部修复不强制原型或多方案。",
+      "not_claimed": "不构成设计效果的实验证明或强制固定迭代。",
+      "eval_ids": [
+        "E18"
+      ]
+    },
+    {
+      "rule_id": "SRC-01",
+      "title": "字幕、画面与实现分开取证",
+      "source_ids": [
+        "A3",
+        "A7",
+        "A7-C1",
+        "A7-C2"
+      ],
+      "basis": "original-evidence-handling-contract",
+      "scope": "仅在引用音视频/视觉资料时；这些来源的缺口用于记录边界，不作为未读内容的证明。",
+      "not_claimed": "没有完成两期整场转录、音轨校对或视觉核验。",
+      "eval_ids": [
+        "E17"
+      ]
+    },
+    {
+      "rule_id": "CMP-04",
+      "title": "自动命名是可编辑的辅助元数据",
+      "source_ids": [
+        "K9"
+      ],
+      "basis": "design-inference",
+      "scope": "产品确有自动标题时。",
+      "not_claimed": "原文没有验证本项目规定的竞态和失败恢复。",
+      "eval_ids": [
+        "E13"
+      ]
+    },
+    {
+      "rule_id": "CMP-05",
+      "title": "输入建议与执行动作分开",
+      "source_ids": [
+        "K10-R1",
+        "N9"
+      ],
+      "basis": "design-inference-with-technical-reference",
+      "scope": "实际有建议或匹配的输入；组合框语义仅在适用时使用。",
+      "not_claimed": "K10 原帖全文仍未取得。",
+      "eval_ids": [
+        "E14"
+      ]
+    },
+    {
+      "rule_id": "AGT-04",
+      "title": "快速结果不是取消任务的别名",
+      "source_ids": [
+        "K8"
+      ],
+      "basis": "design-inference",
+      "scope": "后端实际支持多模式或快路径时。",
+      "not_claimed": "案例不证明后端取消实现或某模式的质量差值。",
+      "eval_ids": [
+        "E15"
+      ]
+    },
+    {
+      "rule_id": "COPY-01",
+      "title": "品牌语气不能替代交易事实",
+      "source_ids": [
+        "K11"
+      ],
+      "basis": "design-inference",
+      "scope": "付款、订阅、赞助与额度等实际交易场景。",
+      "not_claimed": "不是现行 Kimi 计费信息或法律合规意见。",
+      "eval_ids": [
+        "E16"
+      ]
+    }
+  ]
+}

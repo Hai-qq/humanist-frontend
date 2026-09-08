@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "assembled_at": "2026-09-08",
+  "mode": "integration-of-existing-materials",
+  "inputs": [
+    {
+      "source_name": "SOURCE_AUDIT.md",
+      "archived_path": "research/history/v0.1.0/SOURCE_AUDIT.md",
+      "sha256": "8f4137aa1800c07d0c46e0facd4d0ddce4de7fcef0f428843b4d82c34ceab926"
+    },
+    {
+      "source_name": "sources.json",
+      "archived_path": "research/history/v0.1.0/sources.json",
+      "sha256": "bf6f0886a32e78a1f8a3b41211467ed99778fb00d9847090586df5268b966447"
+    },
+    {
+      "source_name": "EVIDENCE_AND_DECISIONS.md",
+      "archived_path": "research/history/v0.1.0/EVIDENCE_AND_DECISIONS.md",
+      "sha256": "6b888e23ce6290bf8708f1245bda3271f249624cef8ddd86f2b95ee5eaf819ff"
+    },
+    {
+      "source_name": "RECOVERY_ADDENDUM_2026-09-08.md",
+      "archived_path": "research/history/RECOVERY_ADDENDUM_2026-09-08.md",
+      "sha256": "b83b472cd0f35119ffc2c8a2d80900c03fbdc229419ab09174dbd4c0821fb0a4"
+    },
+    {
+      "source_name": "ALTERNATIVE_MEDIA_RECOVERY_2026-09-08.md",
+      "archived_path": "research/history/ALTERNATIVE_MEDIA_RECOVERY_2026-09-08.md",
+      "sha256": "7d107336edb6d98ab778662580b1b40648cea023b2e016960290cab75153cfcf"
+    },
+    {
+      "source_name": "Anthropic_Kimi_UI_Design_Resources_2026-09-08.md",
+      "archived_path": "research/history/RESOURCE_DIRECTORY_2026-09-08.md",
+      "sha256": "e95e21f4103a4c5fc2b4ae7e6624ed49eb862e3c749cb45da0d851a797dbd943"
+    }
+  ],
+  "base_archive": {
+    "name": "humanist-frontend-v0.1.0.zip",
+    "sha256": "bf25170cdd0312a01f78c002e5cfdeff8305882428dece2d5b6ecfc5814087b1"
+  },
+  "note": "本轮整合已有文件；不是再次联网通读或新转录。历史附件按字节保留，读取范围沿用当时记录。"
+}

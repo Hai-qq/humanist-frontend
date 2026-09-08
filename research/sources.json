@@ -1,0 +1,1023 @@
+{
+  "version": "0.2.0",
+  "checked_at": "2026-09-08",
+  "sources": [
+    {
+      "id": "A1",
+      "title": "Geist — Anthropic",
+      "url": "https://geist.co/work/anthropic",
+      "origin": "original-directory",
+      "kind": "primary-case",
+      "status": "read",
+      "read_scope": "案例正文；图片资源访问失败，未做逐图尺寸测量",
+      "insight": "原团队解释字体配对、温暖色调、手工视觉与功能化组件的关系。",
+      "boundary": "借鉴内容与品牌表达的协调；不宣称重建当前 Claude 的 CSS。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "evidence_family": "A1",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "A2",
+      "title": "The Subtext — Anthropic Brand Team Interview",
+      "url": "https://www.thesubtext.online/all/anthropic-interview",
+      "origin": "original-directory",
+      "kind": "primary-interview",
+      "status": "read",
+      "read_scope": "品牌团队访谈正文（页面重复段落去重）",
+      "insight": "公司品牌与 Claude 产品表达服务不同对象；强调克制而有人的表达。",
+      "boundary": "把品牌目标写进 brief；不把受访者的体验判断当成因果实验。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "published_at": "2025-06-30",
+      "evidence_family": "A2",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "A3",
+      "title": "How Anthropic Is Redesigning Human–AI Interaction",
+      "url": "https://promptedwithcam.substack.com/p/how-anthropic-is-redesigning-humanai",
+      "origin": "original-directory",
+      "kind": "primary-excerpt",
+      "status": "partial",
+      "read_scope": "原文章公开节选；官方节目说明和章节目录；同一期 Podbay 播放器与下载入口。未取得完整字幕或音轨。",
+      "insight": "公开介绍讨论协作及适当的操作阻力。",
+      "boundary": "这些入口对应同一期节目，不是多份独立证据。章节起点不是逐字稿时间戳；未下载不等于音源不存在。只作背景线索。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "published_at": "2025-12-02",
+      "evidence_family": "A3",
+      "record_basis": [
+        "v0.1.0",
+        "recovery-addendum",
+        "alternative-media-recovery"
+      ],
+      "evidence_role": "context-only",
+      "previous_status": "partial",
+      "full_transcript_obtained": false,
+      "audio_download_succeeded": false,
+      "visual_review": "not-run",
+      "alternative_access": [
+        {
+          "title": "完整视频入口",
+          "url": "https://www.youtube.com/watch?v=GBxs67h4_lo",
+          "status": "metadata-only"
+        },
+        {
+          "title": "官方 Simplecast 节目页",
+          "url": "https://prompted-ai-people-and-the-creative-spark.simplecast.com/episodes/the-hidden-design-choices-behind-claude-with-joel-lewenstein-head-of-product-design-at-anthropic-8EexA0Ti",
+          "status": "description-and-chapters-read"
+        },
+        {
+          "title": "Podbay 同期播放器",
+          "url": "https://podbay.fm/p/prompted-ai-people-and-the-creative-spark/e/1764673200",
+          "status": "description-and-download-link-read",
+          "published_at": "2025-12-02",
+          "displayed_duration": "43:19"
+        },
+        {
+          "title": "Podscan 同期页面",
+          "url": "https://podscan.fm/podcasts/prompted-ai-people-and-the-creative-spark/episodes/the-hidden-design-choices-behind-claude-with-joel-lewenstein-head-of-product-design-at-anthropic",
+          "status": "metadata-only; full transcript not available in prior read"
+        },
+        {
+          "title": "公开 RSS",
+          "url": "https://feeds.simplecast.com/MWJ0vTGb",
+          "status": "route-found; body-not-read"
+        },
+        {
+          "title": "播放器提供的 MP3 路由",
+          "url": "https://evrstrck.com/functions/v1/prefix-track/ddc3a8c4d3b5ee74/afp-922686-injected.calisto.simplecastaudio.com/9536941d-4b0f-427b-8265-df8b40f11ec9/episodes/3bf7c731-ab01-41d1-af0e-083d370e44fd/audio/128/default.mp3?aid=rss_feed&awCollectionId=9536941d-4b0f-427b-8265-df8b40f11ec9&awEpisodeId=3bf7c731-ab01-41d1-af0e-083d370e44fd&feed=MWJ0vTGb",
+          "status": "route-found; download-failed"
+        }
+      ],
+      "updated_in": "0.2.0"
+    },
+    {
+      "id": "A4",
+      "title": "Claude 介面設計解析：Anthropic 如何用色彩、字體和摩擦力打造品牌定位",
+      "url": "https://rar.design/posts/claude-interface-design-philosophy",
+      "origin": "original-directory",
+      "kind": "secondary-analysis",
+      "status": "read",
+      "read_scope": "文章正文、比较表与延伸资源说明",
+      "insight": "把色彩、字形与协作模式串联起来，但对心理效果和竞品的归纳较强。",
+      "boundary": "仅作解释性参考；不采纳未经实验验证的用户心理结论。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "published_at": "2026-04-01",
+      "evidence_family": "A4",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "context-only"
+    },
+    {
+      "id": "A5",
+      "title": "Seamlessly Crafting AI Branding and Visual Identity for Anthropic",
+      "url": "https://abduzeedo.com/seamlessly-crafting-ai-branding-and-visual-identity-anthropic",
+      "origin": "original-directory",
+      "kind": "secondary-case",
+      "status": "read",
+      "read_scope": "案例正文",
+      "insight": "主要整理 Geist 的同一项目。",
+      "boundary": "与 A1 属同一证据链，不计作独立交叉验证。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "published_at": "2024-11-21",
+      "evidence_family": "A1",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "context-only"
+    },
+    {
+      "id": "A6",
+      "title": "Anthropic — Ideas on Design",
+      "url": "https://www.ideasondesign.com/p/anthropic",
+      "origin": "original-directory",
+      "kind": "secondary-note",
+      "status": "read",
+      "read_scope": "品牌笔记正文",
+      "insight": "以早期品牌价值解释视觉取舍。",
+      "boundary": "历史背景，不用于确认现版产品细节。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "A6",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "context-only"
+    },
+    {
+      "id": "A7",
+      "title": "FigBrew: Branding AI with Everett Katigbak (Anthropic) | Figma",
+      "url": "https://www.youtube.com/watch?v=BeP5mqFn2z8",
+      "origin": "original-directory",
+      "kind": "video",
+      "status": "partial",
+      "read_scope": "原视频元信息；已读主持人发布的两段同场短片页面可见转录，分别记录为 A7-C1、A7-C2；未读完整访谈。",
+      "insight": "短片涉及创作实践、具体需求与人的主导权；没有提供可核验的组件数值。",
+      "boundary": "整体仍是 partial；引用短片时使用各自编号，不把两段短片算成完整访谈。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "A7",
+      "record_basis": [
+        "v0.1.0",
+        "alternative-media-recovery"
+      ],
+      "evidence_role": "context-only",
+      "previous_status": "unavailable",
+      "full_transcript_obtained": false,
+      "audio_download_succeeded": false,
+      "visual_review": "not-run",
+      "related_sources": [
+        "A7-C1",
+        "A7-C2"
+      ],
+      "updated_in": "0.2.0"
+    },
+    {
+      "id": "A8",
+      "title": "Redesigning Claude Code on desktop for parallel agents",
+      "url": "https://claude.com/blog/claude-code-desktop-redesign",
+      "origin": "original-directory",
+      "kind": "official-product",
+      "status": "read",
+      "read_scope": "桌面改版文章正文",
+      "insight": "展示多会话与多面板组织，以及可调整的信息披露深度。",
+      "boundary": "借鉴工作台结构；不复制具体产品全部行为。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "published_at": "2026-04-14",
+      "evidence_family": "A8",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "K1",
+      "title": "Kimi 品牌手册",
+      "url": "https://www.kimi.ai/zh-hans/resources/kimi-brand",
+      "origin": "original-directory",
+      "kind": "official-brand",
+      "status": "read",
+      "read_scope": "品牌手册公开正文、颜色/字体/网格/界面说明；未完成所有图片的视觉核验",
+      "insight": "Inter、Geist Mono、Sentient 分工明确；品牌展示与暖白产品工作区并存。",
+      "boundary": "视觉方向依据；本包的尺寸、暗色与组件状态是原创设计决策。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "evidence_family": "K1",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "K2",
+      "title": "MoonshotAI Branding Guide",
+      "url": "https://moonshotai.github.io/Branding-Guide/",
+      "origin": "original-directory",
+      "kind": "official-assets",
+      "status": "read",
+      "read_scope": "公开 Logo 素材页与说明",
+      "insight": "主要是标志形态和背景适用例。",
+      "boundary": "不等于组件系统；未分发任何标志或字体。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "evidence_family": "K2",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "K3",
+      "title": "The Bitter Lessons Behind Kimi Researcher’s taste",
+      "url": "https://medium.com/@xinyijin715/maker-story-the-bitter-lessons-behind-kimi-researchers-ui-6654ec66662c",
+      "origin": "original-directory",
+      "kind": "primary-maker-story",
+      "status": "read",
+      "read_scope": "作者复盘正文；不声称运行其内部评价方案",
+      "insight": "讨论报告呈现中的导航、布局、审美与信息保真权衡。",
+      "boundary": "报告视图参考；不当作 Kimi App 外壳规范或普遍性能结论。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "published_at": "2025-07-15",
+      "evidence_family": "K3",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "K4",
+      "title": "用 Kimi Code CLI 交付 Moonshot AI 的一次重构",
+      "url": "https://www.kimi.ai/zh-hans/resources/shipping-a-refactor-of-moonshot-ai-with-kimi-code-cli",
+      "origin": "original-directory",
+      "kind": "official-engineering",
+      "status": "read",
+      "read_scope": "官网重构文章正文",
+      "insight": "从已存在的 Figma、共享变量和真实代码出发，处理影响范围并验证结果。",
+      "boundary": "采用有证据的设计到代码流程；未取得文中内部 Skill 源码。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "published_at": "2026-09-01",
+      "event_period": "2026-03",
+      "evidence_family": "K4",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "K5",
+      "title": "优设「细节猎人」Kimi 产品合集",
+      "url": "https://www.uisdc.com/hunter_product/kimi",
+      "origin": "original-directory",
+      "kind": "secondary-index",
+      "status": "index-read",
+      "read_scope": "搜索返回的原站目录列表文本；当时快照 10 项。原页与图片未完成核验，也没有递归读完全部子帖。",
+      "insight": "目录用于定位案例，不作为全部子帖已读的证明。",
+      "boundary": "目录快照不是当前完整性或实时数量保证；不据列表摘要制定硬规则。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "K5",
+      "record_basis": [
+        "v0.1.0",
+        "recovery-addendum"
+      ],
+      "evidence_role": "context-only",
+      "previous_status": "unavailable",
+      "updated_in": "0.2.0"
+    },
+    {
+      "id": "K6",
+      "title": "在 Kimi App 里摇晃手机，解锁与 IP 形象的新互动方式！",
+      "url": "https://www.uisdc.com/hunter/0221610701.html",
+      "origin": "original-directory",
+      "kind": "secondary-case",
+      "status": "unavailable",
+      "read_scope": "原页失败；仅可见索引片段",
+      "insight": "索引描述移动端摇动与品牌形象反馈。",
+      "boundary": "没有据摘要增加摇动或吉祥物的硬性要求。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "K6",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "context-only"
+    },
+    {
+      "id": "K7",
+      "title": "4个插画、1个Logo：Kimi如何用设计给高考带来意想不到的惊喜？",
+      "url": "https://www.uisdc.com/hunter/0221627391.html",
+      "origin": "original-directory",
+      "kind": "secondary-case",
+      "status": "unavailable",
+      "read_scope": "原页失败；既有目录与索引信息",
+      "insight": "记录节日插画案例入口。",
+      "boundary": "正文待补读；不得声称分析过全部图片。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "K7",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "context-only"
+    },
+    {
+      "id": "K8",
+      "title": "AI 深度思考功能，为什么需要一个「逃生出口」？",
+      "url": "https://www.uisdc.com/hunter/0221502862.html",
+      "origin": "original-directory",
+      "kind": "secondary-case",
+      "status": "read-via-index",
+      "read_scope": "搜索返回的原站完整“细节描述”短正文；不是原页直接读取。图片和动作前后状态未核验。",
+      "insight": "历史案例描述思考过程中的跳过入口；没有验证后端取消/切换实现。",
+      "boundary": "提供长任务快速路径的设计启发。接口能力、异常处理和状态约束为本项目原创要求，不声称来自案例验证。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "K8",
+      "record_basis": [
+        "v0.1.0",
+        "recovery-addendum"
+      ],
+      "evidence_role": "design-inspiration",
+      "previous_status": "unavailable",
+      "published_at": "2025-05-27",
+      "rule_links": [
+        "AGT-04"
+      ],
+      "updated_in": "0.2.0"
+    },
+    {
+      "id": "K9",
+      "title": "Kimi 的 AI 标题魔法，你体验了吗？",
+      "url": "https://www.uisdc.com/hunter/0221575035.html",
+      "origin": "original-directory",
+      "kind": "secondary-case",
+      "status": "read",
+      "read_scope": "原页标题、日期与“细节描述”正文；未完成配图视觉核验。",
+      "insight": "保存常用语时依据内容生成标题，减少单独命名。",
+      "boundary": "自动标题可编辑、用户命名优先、异步竞态和失败恢复是本项目扩展，不是作者给出的完整实现。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "K9",
+      "record_basis": [
+        "v0.1.0",
+        "recovery-addendum"
+      ],
+      "evidence_role": "design-inspiration",
+      "previous_status": "unavailable",
+      "published_at": "2024-07-19",
+      "rule_links": [
+        "CMP-04"
+      ],
+      "updated_in": "0.2.0"
+    },
+    {
+      "id": "K10",
+      "title": "Kimi 引入搜索匹配，能让 AI 取代传统搜索引擎？",
+      "url": "https://www.uisdc.com/hunter/0221606311.html",
+      "origin": "original-directory",
+      "kind": "secondary-case",
+      "status": "unavailable",
+      "read_scope": "原帖正文仍未取得；另读到同作者汇编中的关键词匹配章节，见 K10-R1。",
+      "insight": "记录输入建议案例入口。",
+      "boundary": "汇编不冒充原帖全文；原帖仍列为 unavailable。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "K10",
+      "record_basis": [
+        "v0.1.0",
+        "recovery-addendum"
+      ],
+      "evidence_role": "context-only",
+      "related_sources": [
+        "K10-R1"
+      ]
+    },
+    {
+      "id": "K11",
+      "title": "Kimi 如何打破传统会员费模式的冰冷感，让付费体验更加生动？",
+      "url": "https://www.uisdc.com/hunter/0221567725.html",
+      "origin": "original-directory",
+      "kind": "secondary-case",
+      "status": "read",
+      "read_scope": "原页标题、日期与“细节描述”正文；GIF 获取失败，没有观察动效。",
+      "insight": "历史案例用生活化措辞表达支持性付费。",
+      "boundary": "只研究表达方式，不描述现行价格或会员规则。交易事实清晰的规则为原创产品约束，不是法律结论。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_family": "K11",
+      "record_basis": [
+        "v0.1.0",
+        "recovery-addendum"
+      ],
+      "evidence_role": "design-inspiration",
+      "previous_status": "unavailable",
+      "published_at": "2024-05-29",
+      "rule_links": [
+        "COPY-01"
+      ],
+      "updated_in": "0.2.0"
+    },
+    {
+      "id": "S1",
+      "title": "anthropics/skills — brand-guidelines",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
+      "origin": "original-directory",
+      "kind": "official-skill",
+      "status": "read",
+      "read_scope": "完整 SKILL.md",
+      "insight": "给出品牌色及偏文档产物的字体指导。",
+      "boundary": "不能直接当作网页组件规范；品牌色不自动满足文字对比度。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "47c72c607bdb5dd81bdea5de2b5e4f3992a5fd59",
+      "evidence_family": "S1",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S2",
+      "title": "anthropics/skills — frontend-design",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+      "origin": "original-directory",
+      "kind": "official-skill",
+      "status": "read",
+      "read_scope": "完整 SKILL.md",
+      "insight": "当前版本强调根据具体任务设计，并明确已指定的视觉方向优先。",
+      "boundary": "借鉴按 brief 设计与评审的方法，不照抄提示文本。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "a5333457c414d20d625f307df945842c0952ecc3",
+      "evidence_family": "S2",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S3",
+      "title": "VoltAgent/awesome-design-md — Claude DESIGN.md",
+      "url": "https://github.com/voltagent/awesome-design-md/blob/main/design-md/claude/DESIGN.md",
+      "origin": "original-directory",
+      "kind": "community-design",
+      "status": "read",
+      "read_scope": "DESIGN.md 的结构化变量、正文、响应式与 Known Gaps；部分长响应分段读取",
+      "insight": "是 alpha 状态的 Claude.com 展示网站分析。",
+      "boundary": "不采纳“永不记录 hover”等绝对规则；不用其估算值冒充官方。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "f92dc464d9bfdb6c6306f45a9ce406c6fca17432",
+      "evidence_family": "S3",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S4",
+      "title": "tweakcn — Claude 主题",
+      "url": "https://github.com/jnsahaj/tweakcn",
+      "origin": "original-directory",
+      "kind": "community-tool",
+      "status": "read",
+      "read_scope": "README 与 utils/theme-presets.ts 的 Claude 段落（限定主题相关范围）",
+      "insight": "主题提供颜色与字体变量，不提供完整产品的信息架构。",
+      "boundary": "可借鉴变量组织；未安装编辑器，未验证全部预设。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "f5112cf34322c21976ff6ddf3597fa01dbd0395b",
+      "evidence_family": "S4",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S5",
+      "title": "MoonshotAI/kimi-cli — web/",
+      "url": "https://github.com/MoonshotAI/kimi-cli/tree/main/web",
+      "origin": "original-directory",
+      "kind": "official-code",
+      "status": "read",
+      "read_scope": "web/ 与 web/src/ 目录、完整 web/src/index.css；其他业务组件未作全量阅读",
+      "insight": "实际 CSS 具有语义变量、暗色映射、代码区和触屏控件处理。",
+      "boundary": "这是 Kimi CLI Web 而非 kimi.com；没有构建、运行或代码安全审计。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "06601e57e87e7d6866993d55ea0b07029212ea95",
+      "evidence_family": "S5",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S6",
+      "title": "12 UI/UX Design Skills to Build Modern Interfaces",
+      "url": "https://www.kimi.ai/resources/ui-ux-design-skills-for-agents",
+      "origin": "original-directory",
+      "kind": "official-resource-guide",
+      "status": "read",
+      "read_scope": "12 Skills 资源文章正文",
+      "insight": "介绍通用设计能力与其他项目入口。",
+      "boundary": "不是 Kimi 品牌专属 Skill；未递归读完文内所有第三方仓库。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "published_at": "2026-08-25",
+      "evidence_family": "S6",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S7",
+      "title": "Kimi Code CLI — Agent Skills",
+      "url": "https://moonshotai.github.io/kimi-cli/en/customization/skills.html",
+      "origin": "original-directory",
+      "kind": "official-doc",
+      "status": "read",
+      "read_scope": "Skill 目录、加载、frontmatter、组织建议和调用章节",
+      "insight": "支持目录化 SKILL.md 与按需加载附属内容。",
+      "boundary": "本包使用标准格式；安装路径及加载效果仍需在目标工具确认。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "evidence_family": "S7",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S8",
+      "title": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "origin": "original-directory",
+      "kind": "community-tool",
+      "status": "read",
+      "read_scope": "README 的目的、命令、安装与限制说明；未审计全部 detector/engine 源码",
+      "insight": "将设计评审与技术检查区分，提供进一步精修命令。",
+      "boundary": "采用检查维度，不继承禁止系统字体等教条；未运行其工具或 hook。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "c4b9831a5cd45fdd02a0215f376bbb9f6e6217ff",
+      "evidence_family": "S8",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S9",
+      "title": "dembrandt/dembrandt",
+      "url": "https://github.com/dembrandt/dembrandt",
+      "origin": "original-directory",
+      "kind": "community-tool",
+      "status": "read",
+      "read_scope": "完整 README",
+      "insight": "提取渲染后的样式观察值，并说明动态内容和交互状态限制。",
+      "boundary": "观察值不等于品牌意图；不默认开启抓取或外部上传。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "d3d9c90c722689febabb5d3ff1442dd062ce1dc0",
+      "evidence_family": "S9",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "S10",
+      "title": "Leonxlnx/kimi-code-desktop — DESIGN.md",
+      "url": "https://github.com/Leonxlnx/kimi-code-desktop/blob/main/docs/DESIGN.md",
+      "origin": "original-directory",
+      "kind": "community-design",
+      "status": "read",
+      "read_scope": "完整 docs/DESIGN.md",
+      "insight": "以连续工作区、有限强调、可恢复交互组织桌面工具。",
+      "boundary": "社区自有设计，不称为 Moonshot 官方规范。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "git_blob_sha": "f4397c7507c0e67232538e4d7b8393e61c1be65e",
+      "evidence_family": "S10",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "T1",
+      "title": "Improving frontend design through Skills",
+      "url": "https://claude.com/blog/improving-frontend-design-through-skills",
+      "origin": "original-directory",
+      "kind": "official-article",
+      "status": "read",
+      "read_scope": "前端 Skill 方法文章正文与提示示例",
+      "insight": "展示将设计维度转成可复用上下文的方式。",
+      "boundary": "历史提示实验，不采纳其中对字体的绝对禁令。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "published_at": "2025-11-12",
+      "evidence_family": "T1",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "T2",
+      "title": "Prompting for frontend aesthetics",
+      "url": "https://platform.claude.com/cookbook/coding-prompting-for-frontend-aesthetics",
+      "origin": "original-directory",
+      "kind": "official-cookbook",
+      "status": "read",
+      "read_scope": "Cookbook 说明、生成代码与隔离提示示例",
+      "insight": "展示按字体、主题等维度控制生成的实验结构。",
+      "boundary": "未调用收费 API；不把示例截图当成普遍效果证明。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "evidence_family": "T2",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "T3",
+      "title": "Set up your design system in Claude Design",
+      "url": "https://support.claude.com/en/articles/14604397-set-up-your-design-system-in-claude-design",
+      "origin": "original-directory",
+      "kind": "official-doc",
+      "status": "read",
+      "read_scope": "设计系统设置说明正文",
+      "insight": "用项目代码、截图和已有规范建立自己的设计系统。",
+      "boundary": "不是 Claude 品牌手册；未操作账号或配置产品。",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "updated_at": "2026-08-06",
+      "evidence_family": "T3",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N1",
+      "title": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "name、description、目录、渐进加载及相关格式约束",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N1",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N2",
+      "title": "WCAG 2.2 — Contrast Minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "SC 1.4.3、适用例外与 sRGB 对比度公式",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N2",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N3",
+      "title": "WCAG 2.2 — Non-text Contrast",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "SC 1.4.11 与控件识别、图形、焦点示例",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N3",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N4",
+      "title": "WCAG 2.2 — Target Size Minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "SC 2.5.8 的 24 CSS px 要求与例外",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N4",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N5",
+      "title": "WCAG 2.2 — Reflow",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "SC 1.4.10 的重排、窄视口与二维内容例外",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N5",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N6",
+      "title": "WCAG 2.2 — Status Messages",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "SC 4.1.3：无需获得焦点也能被辅助技术感知的状态",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N6",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N7",
+      "title": "WCAG 2.2 — Focus Not Obscured Minimum",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "SC 2.4.11：获得键盘焦点的组件不被作者内容完全遮挡",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N7",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N8",
+      "title": "WAI-ARIA APG — Modal Dialog",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "对话框模式与键盘焦点规则",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N8",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N9",
+      "title": "WAI-ARIA APG — Combobox",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "组合框模式、键盘和弹出层关联规则",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N9",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N10",
+      "title": "WAI-ARIA APG — Tabs",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "标签页与面板关联、激活模式和键盘规则",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N10",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N11",
+      "title": "MDN — prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "reduce/no-preference 的含义及媒体查询机制",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N11",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N12",
+      "title": "Google web.dev — Web Vitals",
+      "url": "https://web.dev/articles/vitals",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "LCP、INP、CLS 的良好阈值与现场数据口径",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N12",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N13",
+      "title": "DTCG Format Module 2025.10",
+      "url": "https://www.designtokens.org/tr/2025.10/format/",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "类型、值、引用和序列化相关章节；不是全文通读",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N13",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N14",
+      "title": "OpenAI — Build skills",
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "本地 Skill 的格式与 Codex 项目目录位置",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N14",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "N15",
+      "title": "Claude Code — Extend Claude with skills",
+      "url": "https://code.claude.com/docs/en/skills",
+      "origin": "supplement",
+      "kind": "primary-technical",
+      "status": "scoped-read",
+      "read_scope": "SKILL.md 格式与项目级目录位置",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": true,
+      "boundary": "仅引用列明章节；不声称通读整个站点或标准全文。",
+      "evidence_family": "N15",
+      "record_basis": [
+        "v0.1.0"
+      ],
+      "evidence_role": "reference-with-stated-scope"
+    },
+    {
+      "id": "A7-C1",
+      "title": "FigBrew 同场短片：创作实践（Andrew Hogan 发布）",
+      "url": "https://www.linkedin.com/posts/ahhogan_what-does-it-take-to-shape-an-ai-brand-activity-7341874716992749570-9zGJ",
+      "kind": "primary-clip-transcript",
+      "status": "clip-transcript-read",
+      "read_scope": "原帖说明及 Transcript 栏完整可见文字；字幕生成方式未确认，没有音轨复核或画面检查。",
+      "insight": "创作依赖实践，也包含休息与工作内容转换；不支持强制持续加班。",
+      "boundary": "用于 CTX-06 的方法启发；不构成固定迭代轮数或具体视觉参数依据。",
+      "parent_id": "A7",
+      "evidence_family": "A7",
+      "rule_links": [
+        "CTX-06"
+      ],
+      "transcript_scope": "clip-only",
+      "audio_verified": false,
+      "timestamp_in_full_video": null,
+      "visual_review": "not-run",
+      "origin": "recovered-supplement",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_role": "design-inspiration",
+      "record_basis": [
+        "alternative-media-recovery"
+      ]
+    },
+    {
+      "id": "A7-C2",
+      "title": "FigBrew 同场短片：具体需求与人的主导权（Andrew Hogan 发布）",
+      "url": "https://www.linkedin.com/posts/ahhogan_ai-design-activity-7343386927309471744--vXU",
+      "kind": "primary-clip-transcript",
+      "status": "clip-transcript-read",
+      "read_scope": "原帖说明及 Transcript 栏完整可见文字；未取得可靠整场时间戳，未播放或下载视频。",
+      "insight": "面向小群体的具体需求，关注人的主导权；生成更多应用不等于更多有用作品。",
+      "boundary": "是受访者的判断，不是数量预测或实验证据；迁移为任务成效优先的设计判断。",
+      "parent_id": "A7",
+      "evidence_family": "A7",
+      "rule_links": [
+        "CTX-06",
+        "AGT-03"
+      ],
+      "transcript_scope": "clip-only",
+      "audio_verified": false,
+      "timestamp_in_full_video": null,
+      "visual_review": "not-run",
+      "origin": "recovered-supplement",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_role": "design-inspiration",
+      "record_basis": [
+        "alternative-media-recovery"
+      ]
+    },
+    {
+      "id": "K10-R1",
+      "title": "优设同作者汇编：关键词匹配章节",
+      "url": "https://www.uisdc.com/ai-prompt-design",
+      "kind": "same-author-compilation",
+      "status": "scoped-read",
+      "read_scope": "仅关键词匹配说明及指向 K10 原帖的链接；不声称读完汇编全部章节。",
+      "insight": "输入框提供匹配提示词，帮助构造请求。",
+      "boundary": "同一案例的替代文字入口，不是独立验证；键盘行为仍参照 APG，编辑/执行和异步竞态规则由本项目制定。",
+      "parent_id": "K10",
+      "evidence_family": "K10",
+      "rule_links": [
+        "CMP-05"
+      ],
+      "origin": "recovered-supplement",
+      "checked_at": "2026-09-08",
+      "used_as_normative_evidence": false,
+      "evidence_role": "design-inspiration",
+      "record_basis": [
+        "recovery-addendum"
+      ]
+    }
+  ],
+  "schema_version": 2,
+  "assembled_at": "2026-09-08",
+  "integration_note": "整合已有来源记录与两轮补读笔记；本轮未新增外部阅读、转录或视觉核验。",
+  "status_definitions": {
+    "read": "已读到正文或条目列明的技术文件；不代表整仓库/全站/全部图片。",
+    "scoped-read": "只读列明章节或范围，不等于全文。",
+    "read-via-index": "搜索工具返回的原站短正文已读；原页直读未成功。",
+    "index-read": "只读目录列表，不递归代表子页。",
+    "clip-transcript-read": "只读指定短片页面可见转录；不是整场，也未做音频校对。",
+    "partial": "整体未读完，仅节选、节目说明或关联短片可读。",
+    "unavailable": "目标正文未取得；片段/替代入口在 read_scope 中说明。"
+  },
+  "normative_flag_definition": "沿用 v0.1.0 的来源追踪标记；true 仅表示在注明范围内用作规则参考，不证明官方普适性或效果。新增案例/短片作为设计启发，flag 为 false，具体原创规则看 rule_links。"
+}

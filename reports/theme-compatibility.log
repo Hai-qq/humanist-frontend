@@ -1,0 +1,1 @@
+Compared tokens.json against actual v0.1.0 ZIP: identical after removing design_version. No palette, dimension or motion value changed.

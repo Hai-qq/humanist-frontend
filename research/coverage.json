@@ -1,0 +1,21 @@
+{
+  "total_records": 50,
+  "original_directory": 32,
+  "original_status_counts": {
+    "index-read": 1,
+    "partial": 2,
+    "read": 25,
+    "read-via-index": 1,
+    "unavailable": 3
+  },
+  "technical_supplements": 15,
+  "recovered_supplements": 3,
+  "full_interview_transcripts_obtained": 0,
+  "full_interviews_targeted": 2,
+  "clip_transcripts_read": 2,
+  "remaining_original_article_bodies": [
+    "K6",
+    "K7",
+    "K10"
+  ]
+}

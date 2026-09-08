@@ -1,0 +1,141 @@
+/* Generated from tokens.json. Original defaults, not an official brand system. */
+/* Opt in with data-hf-profile AND data-theme. This is not a global CSS reset. */
+[data-hf-profile] {
+  --hf-font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --hf-font-editorial: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  --hf-font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  --hf-space-4: 0.25rem;
+  --hf-space-8: 0.5rem;
+  --hf-space-12: 0.75rem;
+  --hf-space-16: 1rem;
+  --hf-space-24: 1.5rem;
+  --hf-space-32: 2rem;
+  --hf-space-48: 3rem;
+  --hf-space-64: 4rem;
+  --hf-radius-control: 0.5rem;
+  --hf-radius-panel: 0.75rem;
+  --hf-radius-dialog: 1rem;
+  --hf-control-size: 2.5rem;
+  --hf-target-touch: 2.75rem;
+  --hf-body-size: 1rem;
+  --hf-ui-size: 0.875rem;
+  --hf-caption-size: 0.8125rem;
+  --hf-line-ui: 1.5;
+  --hf-line-reading: 1.7;
+  --hf-motion-fast: 120ms;
+  --hf-motion-base: 180ms;
+  --hf-motion-panel: 240ms;
+  --hf-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+[data-hf-profile="editorial-warm"][data-theme="light"] {
+  color-scheme: light;
+  --hf-canvas: #FAF9F5;
+  --hf-surface: #FFFFFF;
+  --hf-surface-subtle: #F0EDE6;
+  --hf-text: #242320;
+  --hf-text-muted: #625E56;
+  --hf-brand-accent: #D97757;
+  --hf-action: #A64B32;
+  --hf-action-hover: #913D29;
+  --hf-action-pressed: #793120;
+  --hf-on-action: #FFFFFF;
+  --hf-link: #94412D;
+  --hf-focus: #94412D;
+  --hf-border-subtle: #DEDAD1;
+  --hf-border-control: #8B877F;
+  --hf-selected: #F4E4DA;
+  --hf-on-selected: #7B3525;
+  --hf-success: #236642;
+  --hf-success-bg: #E7F3EB;
+  --hf-warning: #805400;
+  --hf-warning-bg: #FFF3D6;
+  --hf-danger: #A82E24;
+  --hf-danger-bg: #FCECE8;
+}
+
+[data-hf-profile="editorial-warm"][data-theme="dark"] {
+  color-scheme: dark;
+  --hf-canvas: #1F1E1B;
+  --hf-surface: #282622;
+  --hf-surface-subtle: #302D28;
+  --hf-text: #F4F1E9;
+  --hf-text-muted: #BBB5AA;
+  --hf-brand-accent: #D97757;
+  --hf-action: #E8A58C;
+  --hf-action-hover: #EFB69F;
+  --hf-action-pressed: #F5C6B2;
+  --hf-on-action: #281C16;
+  --hf-link: #F0AF94;
+  --hf-focus: #F0AF94;
+  --hf-border-subtle: #48443C;
+  --hf-border-control: #878179;
+  --hf-selected: #482C23;
+  --hf-on-selected: #F5C0A8;
+  --hf-success: #9AD7AE;
+  --hf-success-bg: #20372A;
+  --hf-warning: #EBC879;
+  --hf-warning-bg: #393020;
+  --hf-danger: #F5ACA2;
+  --hf-danger-bg: #402823;
+}
+
+[data-hf-profile="precise-light"][data-theme="light"] {
+  color-scheme: light;
+  --hf-canvas: #FAFAF8;
+  --hf-surface: #FFFFFF;
+  --hf-surface-subtle: #F0F2F4;
+  --hf-text: #20242A;
+  --hf-text-muted: #59616C;
+  --hf-brand-accent: #007CFF;
+  --hf-action: #175CD3;
+  --hf-action-hover: #144BA8;
+  --hf-action-pressed: #103B85;
+  --hf-on-action: #FFFFFF;
+  --hf-link: #175CD3;
+  --hf-focus: #175CD3;
+  --hf-border-subtle: #DCE0E5;
+  --hf-border-control: #7D8794;
+  --hf-selected: #E5EEFC;
+  --hf-on-selected: #154FA7;
+  --hf-success: #236642;
+  --hf-success-bg: #E7F3EB;
+  --hf-warning: #805400;
+  --hf-warning-bg: #FFF3D6;
+  --hf-danger: #A82E24;
+  --hf-danger-bg: #FCECE8;
+}
+
+[data-hf-profile="precise-light"][data-theme="dark"] {
+  color-scheme: dark;
+  --hf-canvas: #15191F;
+  --hf-surface: #1D232B;
+  --hf-surface-subtle: #252D36;
+  --hf-text: #EDF1F6;
+  --hf-text-muted: #B2BDC9;
+  --hf-brand-accent: #007CFF;
+  --hf-action: #9BC4FF;
+  --hf-action-hover: #B3D3FF;
+  --hf-action-pressed: #C8DEFF;
+  --hf-on-action: #112543;
+  --hf-link: #A8CDFF;
+  --hf-focus: #A8CDFF;
+  --hf-border-subtle: #3E4957;
+  --hf-border-control: #7F8D9D;
+  --hf-selected: #263B56;
+  --hf-on-selected: #BED9FF;
+  --hf-success: #9AD7AE;
+  --hf-success-bg: #20372A;
+  --hf-warning: #EBC879;
+  --hf-warning-bg: #393020;
+  --hf-danger: #F5ACA2;
+  --hf-danger-bg: #402823;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-hf-profile] {
+    --hf-motion-fast: 0ms;
+    --hf-motion-base: 0ms;
+    --hf-motion-panel: 0ms;
+  }
+}

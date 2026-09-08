@@ -1,0 +1,62 @@
+{
+  "python": "3.9.6",
+  "platform": "Darwin",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/build_sources.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "local-1.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/build_spec.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "local-2.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/build_tokens.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "local-3.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate_package.py"
+      ],
+      "exit_code": 0,
+      "log": "local-4.log"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "local-5.log"
+    },
+    {
+      "command": [
+        "python3",
+        "skills/humanist-frontend/scripts/check_contrast.py"
+      ],
+      "exit_code": 0,
+      "log": "local-6.log"
+    }
+  ]
+}

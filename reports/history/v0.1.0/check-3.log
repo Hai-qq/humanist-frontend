@@ -1,0 +1,29 @@
+test_all_declared_pairs (test_package.ContrastTests.test_all_declared_pairs) ... ok
+test_black_white (test_package.ContrastTests.test_black_white) ... ok
+test_brand_blue_not_normal_white_text (test_package.ContrastTests.test_brand_blue_not_normal_white_text) ... ok
+test_comparison_not_rounded (test_package.ContrastTests.test_comparison_not_rounded) ... ok
+test_empty_pairs_rejected (test_package.ContrastTests.test_empty_pairs_rejected) ... ok
+test_invalid_colors (test_package.ContrastTests.test_invalid_colors) ... ok
+test_invalid_threshold_rejected (test_package.ContrastTests.test_invalid_threshold_rejected) ... ok
+test_known_reference (test_package.ContrastTests.test_known_reference) ... ok
+test_non_object_mode_rejected (test_package.ContrastTests.test_non_object_mode_rejected) ... ok
+test_non_object_root_rejected (test_package.ContrastTests.test_non_object_root_rejected) ... ok
+test_same_color (test_package.ContrastTests.test_same_color) ... ok
+test_symmetry (test_package.ContrastTests.test_symmetry) ... ok
+test_unknown_token_rejected (test_package.ContrastTests.test_unknown_token_rejected) ... ok
+test_wrong_schema_rejected (test_package.ContrastTests.test_wrong_schema_rejected) ... ok
+test_cli_invalid_input_exit_code (test_package.PackageTests.test_cli_invalid_input_exit_code) ... ok
+test_cli_json_output (test_package.PackageTests.test_cli_json_output) ... ok
+test_external_symlink_parent_rejected (test_package.PackageTests.test_external_symlink_parent_rejected) ... ok
+test_generated_css_is_current (test_package.PackageTests.test_generated_css_is_current) ... ok
+test_generated_spec_is_current (test_package.PackageTests.test_generated_spec_is_current) ... ok
+test_installer_copies_self_contained_skill (test_package.PackageTests.test_installer_copies_self_contained_skill) ... ok
+test_installer_never_overwrites (test_package.PackageTests.test_installer_never_overwrites) ... ok
+test_missing_project_rejected (test_package.PackageTests.test_missing_project_rejected) ... ok
+test_package_links_and_metadata (test_package.PackageTests.test_package_links_and_metadata) ... ok
+test_theme_key_parity (test_package.PackageTests.test_theme_key_parity) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 4.027s
+
+OK
