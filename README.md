@@ -97,6 +97,8 @@ python3 scripts/install_skill.py --host kimi --project /path/to/project
 
 18 个 Agent 场景仍待执行，包检查不代表页面视觉、宿主实机加载或整页 WCAG 验收。欢迎通过[问题反馈](https://github.com/Hai-qq/humanist-frontend/issues/new)提供真实项目中的失败案例；[贡献约定](CONTRIBUTING.md)说明如何补充依据与规则。
 
+参与讨论请遵守[社区约定](CODE_OF_CONDUCT.md)；安全问题使用[私密报告流程](SECURITY.md)。
+
 ---
 
 原创部分采用 [MIT License](LICENSE)。第三方名称、资料与素材范围见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md)。

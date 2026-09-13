@@ -9,7 +9,7 @@ import sys
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {".git", ".venv", "venv", "__pycache__", ".pytest_cache", "node_modules", "dist"}
-ROOT_FILES = {".gitignore", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", "CHANGELOG.md", "DESIGN_SPEC.md", "release.json"}
+ROOT_FILES = {".gitignore", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "CHANGELOG.md", "DESIGN_SPEC.md", "release.json"}
 ROOT_DIRS = {".github", "skills", "research", "reports", "scripts", "tests", "evals", "docs"}
 FONT_EXTENSIONS = {".ttf", ".otf", ".woff", ".woff2"}
 
