@@ -1,6 +1,6 @@
 ---
-name: 问题或改进
-about: 报告安装、规范或实际使用中的问题
+name: 设计规则与来源讨论
+about: 讨论设计规则的适用范围、原始来源或迁移依据
 title: ''
 labels: ''
 assignees: ''
