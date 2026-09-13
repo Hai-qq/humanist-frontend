@@ -129,7 +129,7 @@ class SourceIntegrationTests(unittest.TestCase):
     def test_version_drift_is_detected(self):
         with clone() as r:
             p = r / "skills/humanist-frontend/SKILL.md"
-            p.write_text(p.read_text().replace('version: "0.2.0"', 'version: "9.9.9"'), encoding="utf-8")
+            p.write_text(re.sub(r'(?m)^  version: .+$', '  version: "9.9.9"', p.read_text()), encoding="utf-8")
             self.assertTrue(any("Skill version differs" in x for x in validator.validate(r)))
 
 

@@ -1,72 +1,46 @@
 {
-  "version": "0.2.0",
-  "date": "2026-09-08",
-  "python_version": "3.13.5",
-  "scope": "package-and-declared-token-pairs-only",
-  "unit_tests": {
-    "count": 47,
-    "status": "passed",
-    "note": "Structure/metadata/install/packaging/contrast checks; not UI or Agent behavior tests."
-  },
-  "declared_contrast_pairs": {
-    "total": 88,
-    "failed": 0,
-    "status": "passed",
-    "scope": "declared-opaque-token-pairs-only"
-  },
-  "yaml_parse": {
-    "status": "passed",
-    "note": "Parsed SKILL.md frontmatter with PyYAML 6.0.3; not host certification."
-  },
-  "theme_compatibility_with_v010": "passed; only design_version changed",
-  "commands": [
+  "version": "0.3.0",
+  "date": "2026-09-13",
+  "python": "Python 3.12.14",
+  "checks": [
     {
-      "name": "source-sync",
       "command": [
-        "python",
+        "python3",
         "scripts/build_sources.py",
         "--check"
       ],
       "exit_code": 0,
-      "status": "passed",
-      "log": "source-sync.log"
+      "log": "v0.3.0-check-1.log"
     },
     {
-      "name": "spec-sync",
       "command": [
-        "python",
+        "python3",
         "scripts/build_spec.py",
         "--check"
       ],
       "exit_code": 0,
-      "status": "passed",
-      "log": "spec-sync.log"
+      "log": "v0.3.0-check-2.log"
     },
     {
-      "name": "token-sync",
       "command": [
-        "python",
+        "python3",
         "scripts/build_tokens.py",
         "--check"
       ],
       "exit_code": 0,
-      "status": "passed",
-      "log": "token-sync.log"
+      "log": "v0.3.0-check-3.log"
     },
     {
-      "name": "package",
       "command": [
-        "python",
+        "python3",
         "scripts/validate_package.py"
       ],
       "exit_code": 0,
-      "status": "passed",
-      "log": "package.log"
+      "log": "v0.3.0-check-4.log"
     },
     {
-      "name": "unit-tests",
       "command": [
-        "python",
+        "python3",
         "-m",
         "unittest",
         "discover",
@@ -75,28 +49,16 @@
         "-v"
       ],
       "exit_code": 0,
-      "status": "passed",
-      "log": "unit-tests.log"
+      "log": "v0.3.0-check-5.log"
     },
     {
-      "name": "contrast",
       "command": [
-        "python",
-        "skills/humanist-frontend/scripts/check_contrast.py",
-        "--json"
+        "python3",
+        "skills/humanist-frontend/scripts/check_contrast.py"
       ],
       "exit_code": 0,
-      "status": "passed",
-      "log": "contrast.log"
+      "log": "v0.3.0-check-6.log"
     }
   ],
-  "not_run": [
-    "Browser visual and interaction tests: no runnable application fixture is part of this specification repository.",
-    "Screen-reader and real operating-system IME tests.",
-    "Actual Codex / Claude Code / Kimi Skill discovery and task execution.",
-    "18 Agent evaluation scenarios: scenario definitions only; no frontend fixtures or model runner bundled.",
-    "Cross-model or controlled design-quality comparison.",
-    "New external source fetching, full-interview transcription, audio verification or media-frame review in this assembly turn.",
-    "Third-party repository builds or security audits."
-  ]
+  "agent_evaluations": "not-run"
 }

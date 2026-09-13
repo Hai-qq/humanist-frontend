@@ -23,18 +23,23 @@ def render() -> str:
                 citations[key] = value
         sections.append(re.sub(rf"^\[{SOURCE_ID}\]: .+$", "", text, flags=re.M).strip())
     release = json.loads((ROOT / "release.json").read_text(encoding="utf-8"))
-    intro = f"""# Humanist Frontend · Agent 前端设计规范
+    intro = f"""# Humanist · 界面设计规范
 
 版本 {release['version']} · 来源快照 {release['source_snapshot_date']}
 
-面向 Agent 的原创实施规范，受 Anthropic/Claude/Kimi 公开资料启发，非官方品牌手册。
-包含五部分：目标与证据、视觉系统、组件与交互、工程流程、可访问性与验收。
+从 Anthropic 与 Kimi 的公开设计指南、产品案例、团队访谈及实现资料中提炼的前端设计方法。面向希望理解设计理由的开发者与设计者，也为 Agent 提供按需参考。
 
-本版已合并原仓库与后续补读，含自动命名、输入建议、长任务快速路径、交易文案以及短片方法启发。
-采用和拒绝的理由见 [证据与决策](research/EVIDENCE_AND_DECISIONS.md)；来源范围见 [来源审计](research/SOURCE_AUDIT.md)。两期完整访谈仍未取得，不能将本版描述成全部视频/图片/仓库文件均已读完。
-Agent 日常使用 [SKILL.md](skills/humanist-frontend/SKILL.md) 按需加载，不必每次读这份完整汇编。
+## 如何使用
 
-维护入口为 Skill 的 references/01–05；本文件由 scripts/build_spec.py 生成。"""
+先阅读第一章的研究方法，再按任务进入视觉、交互、工程或验收章节。各章先说明材料线索、作者的综合判断、应用方式与检验方法，再展开可执行规则。数值预设是原创实施默认，可按实际项目调整。
+
+- 研究依据与采用理由：[证据与决策](research/EVIDENCE_AND_DECISIONS.md)。
+- 材料性质及取得范围：[来源导读](research/READING_GUIDE.md) / [来源台账](research/SOURCE_AUDIT.md)。
+- Agent 的规则选择与执行入口：[SKILL.md](skills/humanist-frontend/SKILL.md)。
+
+本规范不代表两家公司的官方统一系统；当前两段完整访谈仍未取得完整转录，节选仅支持其范围。研究记录与本次文档修订分开，不因新版发布提升来源完成状态。
+
+维护入口为 Skill 的 references/01–05；本文件由 scripts/build_spec.py 生成，避免另存一份独立规则。"""
     return intro + "\n\n---\n\n" + "\n\n---\n\n".join(sections) + "\n\n## 引用索引\n\n" + "\n".join(f"[{k}]: {v}" for k, v in citations.items()) + "\n"
 
 

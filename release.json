@@ -1,10 +1,11 @@
 {
   "name": "humanist-frontend",
-  "version": "0.2.0",
-  "release_date": "2026-09-08",
+  "version": "0.3.0",
+  "release_date": "2026-09-13",
   "source_snapshot_date": "2026-09-08",
   "minimum_python": "3.10",
   "license": "MIT",
-  "source_integration": "v0.1.0 + article recovery + two same-session clip transcripts",
-  "agent_evaluation_status": "not-run"
+  "source_integration": "Research-led specification and task-oriented Skill; existing source snapshot retained",
+  "agent_evaluation_status": "not-run",
+  "display_name": "Humanist · 界面设计札记"
 }

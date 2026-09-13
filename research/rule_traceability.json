@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scope": "new-or-expanded-rules-in-this-release",
   "verification_status": "agent-scenarios-not-run",
   "rules": [

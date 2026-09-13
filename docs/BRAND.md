@@ -1,30 +1,25 @@
-# 项目视觉标识
+# Humanist · 视觉标识
 
-展示名称为 **Humanist Frontend**；仓库、安装目录与调用名统一使用 `humanist-frontend`。
+展示名称为 **Humanist · 界面设计札记**。仓库地址、安装目录、CSS 前缀及调用名保留 `humanist-frontend` / `--hf-*`，避免已有使用方式失效。
 
-![Humanist Frontend 标识](assets/logo.png)
+![Humanist 字标](assets/logo.png)
 
-## 标识与使用
+## 表达与排版
 
-小写 h 配陶土色折角，呼应阅读、页面与编辑。标识使用独立构图，不复用参考公司的 Logo 或吉祥物。首页展示宽度为 112px，保留图片自带留白；避免拉伸、加阴影或放在低对比背景上。
+以 Humanist 字标作为主要身份：衬线字形表现阅读与编辑的气质，陶土色方点形成简洁的结束标记。首页让来源说明、设计判断和使用入口承担内容，不依靠具象书本图标解释项目。
 
-- 画布：`#FAF9F5`
-- 文字：`#242320`
-- 强调：`#A64B32`
-- 标题和正文沿用 GitHub 原生字体，正文保持可选择、可搜索。
+使用原图比例，首页显示宽度为 560px，并由 GitHub 容器约束实际宽度；小屏缩放时不拉伸。图片自带浅色背景，页面其他文字沿用 GitHub 原生排版。字标图只用于身份展示，项目说明保持真实文字与可访问链接。
 
-品牌色用于本项目介绍。安装 Skill 不会把项目标识或首页配色注入用户应用。
+配色方向为炭黑、暖白与陶土色；这些是项目门面的视觉选择，不会作为强制主题注入使用者项目。
 
-## 资产与来源
+## 资产与维护
 
-[logo.png](assets/logo.png) 为本次使用内置 ImageGen 生成的 PNG 标识，使用固定暖白底以适应 GitHub 明暗模式；不是矢量文件。它不代表已经完成商标检索或注册。
+- [logo.png](assets/logo.png)：内置 ImageGen 生成的 PNG 字标，非矢量字体文件。词形已目视核对，不宣称商标注册或检索完成。
+- [principles.svg](assets/principles.svg)：可编辑的原创原则示例，展示同一研究笔记任务的阅读、组织和失败恢复。
+- [themes.svg](assets/themes.svg)：实际 token 浅色色值的可选主题示意，非品牌复刻或运行中的应用。
 
-生成提示词：
+生成字标的提示词：
 
-> Create one finished minimal original logo symbol for Humanist Frontend, an open-source frontend design skill focused on humane readable interfaces. Square canvas, warm off-white #FAF9F5 solid background. Center a compact distinctive lowercase h monogram, combining editorial serif warmth with simple architectural geometry: two stems joined by a soft arch, dark charcoal #242320, with one small terracotta #A64B32 inset accent suggesting a page corner. Mark occupies 60% of canvas with generous clean whitespace. Flat crisp graphic, polished optical balance, recognizable at small size. Symbol only, no words, no caption, no mockup, no shadow, no texture, no gradients. Must not resemble Anthropic starburst or Kimi mascot. Return one clean image.
+> Design one exquisite finished typographic wordmark reading exactly 'Humanist' for an independent editorial collection of interface design research. Wide horizontal composition, 3:1 ratio, pure opaque ivory background. The word Humanist in a sophisticated contemporary humanist serif, dark charcoal, medium stroke weight with elegant subtle thick-thin contrast, generous open counters, highly intentional kerning, restrained distinctive details in the H and t, not italic, not retro, no swashes. Lowercase after capital H. A single tiny terracotta square period immediately after the t as an editorial accent. Large legible type centered, word occupies 80% canvas width. The design should feel like a beautifully typeset architecture or design journal masthead, quietly confident, premium but approachable. Text is the entire identity: no icon, no book, no crop marks, no subheading, no border, no mockup, no perspective, no shadows, no 3D, no gradients, no texture. Completely flat solid ink shapes on a completely opaque uniform #FAF9F5 background, never transparent.
 
-第二次编辑提示：仅将透明背景改为不透明暖白，保留 h 的结构、位置和陶土色折角，并减少高光。
-
-[themes.svg](assets/themes.svg) 为可编辑的静态主题预览，使用 `tokens.json` 中两套浅色色值，内容是示例。修改主题值时同步检查预览；该图不代表运行中的前端应用。
-
-这些资产随本项目按 MIT 分发。第三方名称的使用范围见 [声明](../THIRD_PARTY_NOTICES.md)。
+项目资产随仓库按 MIT 分发。第三方资料与名称范围见[声明](../THIRD_PARTY_NOTICES.md)。

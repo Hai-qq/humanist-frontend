@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "execution_status": "not-run",
   "purpose": "Agent evaluation scenarios; not automated proof of agent behavior.",
   "cases": [
