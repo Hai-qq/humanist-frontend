@@ -2,7 +2,7 @@
 
 展示名称为 **Humanist · 界面设计札记**。仓库地址、安装目录、CSS 前缀及调用名保留 `humanist-frontend` / `--hf-*`，避免已有使用方式失效。
 
-![Humanist 字标](assets/logo.png)
+![Humanist 字标](assets/humanist-wordmark-v0.3.png)
 
 ## 表达与排版
 
@@ -14,7 +14,7 @@
 
 ## 资产与维护
 
-- [logo.png](assets/logo.png)：内置 ImageGen 生成的 PNG 字标，非矢量字体文件。词形已目视核对，不宣称商标注册或检索完成。
+- [humanist-wordmark-v0.3.png](assets/humanist-wordmark-v0.3.png)：内置 ImageGen 生成的 PNG 字标，非矢量字体文件。词形已目视核对，不宣称商标注册或检索完成。
 - [principles.svg](assets/principles.svg)：可编辑的原创原则示例，展示同一研究笔记任务的阅读、组织和失败恢复。
 - [themes.svg](assets/themes.svg)：实际 token 浅色色值的可选主题示意，非品牌复刻或运行中的应用。
 

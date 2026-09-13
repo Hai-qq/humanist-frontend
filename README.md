@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/logo.png" width="560" alt="Humanist 字标：衬线字形与陶土色方点"></p>
+<p align="center"><img src="docs/assets/humanist-wordmark-v0.3.png" width="560" alt="Humanist 字标：衬线字形与陶土色方点"></p>
 <p align="center"><strong>界面设计札记</strong></p>
 <p align="center">从 Anthropic 与 Kimi 的公开设计实践中，提炼可迁移的前端设计方法。</p>
 <p align="center">
