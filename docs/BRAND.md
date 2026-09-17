@@ -2,7 +2,7 @@
 
 展示名称为 **Humanist · 界面设计札记**。仓库地址、安装目录、CSS 前缀及调用名保留 `humanist-frontend` / `--hf-*`，避免已有使用方式失效。
 
-<p><img src="assets/humanist-symbol-v0.3.svg" width="144" alt="Humanist 几何主图标"></p>
+<p><img src="assets/brand/mark.svg" width="144" alt="Humanist 几何主图标"></p>
 
 ![Humanist 字标](assets/humanist-wordmark-v0.3.png)
 
@@ -10,7 +10,7 @@
 
 几何主图标由错位直角框与陶土色方块构成，以留白、对齐和视觉重心表达界面设计。Humanist 字标配合主图标展示项目名称：衬线字形表现阅读与编辑的气质，陶土色方点形成简洁的结束标记。首页让来源说明、设计判断和使用入口承担内容，不依靠具象书本图标解释项目。
 
-使用原图比例，主图标显示为 144×144px，字标显示宽度为 360px，并由 GitHub 容器约束实际宽度；小屏缩放时不拉伸。图片自带浅色背景，页面其他文字沿用 GitHub 原生排版。字标图只用于身份展示，项目说明保持真实文字与可访问链接。
+README 使用与个人网站一致的主图标展示框和真实文字标题。独立字标作为可用素材保留，主图标显示为 144×144px，并由 GitHub 容器约束实际宽度；小屏缩放时不拉伸。图片自带浅色背景，页面其他文字沿用 GitHub 原生排版。字标图只用于身份展示，项目说明保持真实文字与可访问链接。
 
 配色方向为炭黑、暖白与陶土色；这些是项目门面的视觉选择，不会作为强制主题注入使用者项目。
 
@@ -27,3 +27,7 @@
 > Design one exquisite finished typographic wordmark reading exactly 'Humanist' for an independent editorial collection of interface design research. Wide horizontal composition, 3:1 ratio, pure opaque ivory background. The word Humanist in a sophisticated contemporary humanist serif, dark charcoal, medium stroke weight with elegant subtle thick-thin contrast, generous open counters, highly intentional kerning, restrained distinctive details in the H and t, not italic, not retro, no swashes. Lowercase after capital H. A single tiny terracotta square period immediately after the t as an editorial accent. Large legible type centered, word occupies 80% canvas width. The design should feel like a beautifully typeset architecture or design journal masthead, quietly confident, premium but approachable. Text is the entire identity: no icon, no book, no crop marks, no subheading, no border, no mockup, no perspective, no shadows, no 3D, no gradients, no texture. Completely flat solid ink shapes on a completely opaque uniform #FAF9F5 background, never transparent.
 
 项目资产随仓库按 MIT 分发。第三方资料与名称范围见[声明](../THIRD_PARTY_NOTICES.md)。
+
+## 跨平台一致性
+
+公开 README、GitHub 个人主页与个人网站共同使用 [统一展示标识](assets/brand/README.md)。几何图形沿用已选定的 v0.3.0 PNG，不修改 Skill token 或用户项目主题。
