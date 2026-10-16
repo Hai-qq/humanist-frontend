@@ -1,0 +1,27 @@
+{
+  "name": "humanist-frontend",
+  "description": "Humanist · 界面设计札记：从 Anthropic 与 Kimi 公开设计资料提炼的中文前端设计规范与 Agent Skill",
+  "owner": {
+    "name": "Hai-qq",
+    "url": "https://github.com/Hai-qq"
+  },
+  "plugins": [
+    {
+      "name": "humanist-frontend",
+      "description": "中文界面的排版、保存与恢复、长任务状态和 Agent 交互规则；已有设计系统优先",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/humanist-frontend"
+      ],
+      "author": {
+        "name": "Hai-qq"
+      },
+      "homepage": "https://github.com/Hai-qq/humanist-frontend",
+      "repository": "https://github.com/Hai-qq/humanist-frontend",
+      "license": "MIT",
+      "keywords": ["frontend", "design", "chinese", "typography", "skill"],
+      "category": "design"
+    }
+  ]
+}

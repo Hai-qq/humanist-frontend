@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- 重写首页：第一屏只放一句话定位、主题预览和一行安装命令；用五个具体翻车场景代替抽象原则，并链接到对应规则；免责说明集中到“证据边界”一节。新增英文版 README.en.md，两份可互相切换；主图标移到页脚。
+- 新增两种安装方式：`npx skills add Hai-qq/humanist-frontend`（vercel-labs/skills）和 Claude Code 插件市场（`.claude-plugin/marketplace.json`）；Python 安装器保留作备选。包检查新增插件市场名称与 Skill 路径校验。
+- reports/ 只保留 VALIDATION.md，逐次运行的日志改为 Release 附件；v0.3.0 及以前的日志仍在对应标签和 Release 的完整仓库 ZIP 中。完整仓库归档纳入 README.en.md 与插件市场清单。
 - 重新设计两套可选配色。editorial-warm 改为纸、墨、陶土分工：主要操作用墨色，陶土色只做品牌、链接、焦点与选中，错误色与品牌色不再同色。precise-light 改用中性暖灰阶，操作蓝与品牌蓝同色相，暗色改为中性近黑。
 - 新增 `surface-inverse` / `on-inverse` 展示带变量及对应色对；声明色对由 88 增至 92，全部通过。
 - 主题预览图改为中文示例、明暗对照；原则示例同步新色值。
@@ -57,4 +60,4 @@ Agent 评估场景由 12 个增至 18 个，**全部仍未执行**。发布验�
 ## 0.1.0 — 2026-09-08
 
 初始设计规范、Skill、两种可选明暗主题、模板、校验脚本与 12 个待执行 Agent 场景。
-历史验证见 reports/history/v0.1.0；历史来源审计见 research/history/v0.1.0。
+历史验证见 v0.2.0、v0.3.0 标签及其 Release 完整仓库 ZIP 中的 reports/history/v0.1.0；历史来源审计见 research/history/v0.1.0。

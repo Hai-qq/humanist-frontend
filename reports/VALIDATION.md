@@ -1,18 +1,45 @@
-# v0.3.0 验证记录
+# 验证记录
 
-2026-09-13。本版重组研究定位、规范解释与执行入口；来源快照仍为 2026-09-08，没有升级原材料的阅读状态。
+仓库里只保留这一份验证摘要。每次运行的原始输出不提交，发布时作为 Release 附件；v0.3.0 及以前的原始日志见下文“已发布版本”。各版本的记录只说明当时实际跑过什么，不能作为其他版本的通过依据。
 
-| 检查 | 结果 | 证据 |
+## v0.3.0 之后的未发布改动
+
+2026-10-16，macOS（Darwin 25.6.0），Python 3.13.5。GitHub Actions 另在 Python 3.10 与 3.13 上运行这七项。
+
+| 检查 | 命令 | 结果 |
 |---|---|---|
-| 来源生成物同步 | passed | [日志](v0.3.0-check-1.log) |
-| 规范汇编同步 | passed | [日志](v0.3.0-check-2.log) |
-| token 同步 | passed | [日志](v0.3.0-check-3.log) |
-| 包结构、引用与版本 | passed | [日志](v0.3.0-check-4.log) |
-| 47 项测试 | passed | [日志](v0.3.0-check-5.log)，含安装与双 ZIP 清单检查 |
-| 88 个声明色对 | passed | [日志](v0.3.0-check-6.log) |
-| 原有主题数值兼容 | passed | 本次仅修改 design_version，CSS 与原版相同 |
-| 原创静态示例图 | passed | 已渲染查看阅读、组织和恢复三种侧面；非真实应用测试 |
-| 18 个 Agent 场景与宿主实机加载 | not-run | 未将文档更新作为行为测试结果 |
-| 真实系统输入法、读屏、完整页面 WCAG | not-run | 包检查与示例图不能证明这些项目 |
+| 来源生成物同步 | `python scripts/build_sources.py --check` | passed |
+| 规范汇编同步 | `python scripts/build_spec.py --check` | passed |
+| token 同步 | `python scripts/build_tokens.py --check` | passed |
+| 文件、本地链接、版本、来源与规则追踪、历史哈希、插件市场路径 | `python scripts/validate_package.py` | passed |
+| 单元测试 | `python -m unittest discover -s tests -v` | 47 passed |
+| 声明的不透明 sRGB 色对 | `python skills/humanist-frontend/scripts/check_contrast.py` | 92/92 passed |
+| 双 ZIP 打包 | `python scripts/build_release.py --output <仓库外目录>` | passed |
 
-运行环境与命令见 [validation.json](validation.json)。旧报告为 [v0.2.0](VALIDATION-v0.2.0.md)，不得作为本版通过依据。
+### 安装方式（手动实测，CI 不运行）
+
+| 方式 | 做法 | 结果 |
+|---|---|---|
+| skills CLI 1.7.2 | 在临时空项目运行 `npx skills add Hai-qq/humanist-frontend -a claude-code -a codex -y`，来源为当时的 GitHub main | 识别到 1 个 Skill；完整目录装到 `.agents/skills/humanist-frontend/`，与仓库 `skills/humanist-frontend/` 逐文件一致；`.claude/skills/humanist-frontend` 是指向它的软链接；装好的对比度脚本可运行；用户目录 `~/.agents` 未改动 |
+| skills CLI 1.7.2 | 加入 `.claude-plugin/marketplace.json` 后，对本地仓库运行 `npx skills add <仓库路径> --list` | 仍只识别 1 个 Skill，没有重复 |
+| Claude Code 2.1.289 插件 | 设置 `CLAUDE_CONFIG_DIR=<临时目录>` 隔离个人配置，运行 `claude plugin validate .`（含 `--strict`）、`claude plugin marketplace add <仓库路径>`、`claude plugin install humanist-frontend@humanist-frontend` | 校验通过，安装成功；`claude plugin details` 列出 `Skills (1) humanist-frontend` |
+
+这些只说明文件被正确复制、插件被正确登记，没有启动 Agent 会话确认模型会调用这个 Skill。
+
+### 未执行
+
+- 18 个 Agent 评估场景：只有场景定义与评估协议。
+- 在 Codex、Claude Code、Kimi 中实际调用 Skill 完成设计任务。
+- 下游页面的浏览器视觉与交互、真实系统输入法、读屏、整页 WCAG 验收。
+- 跨模型对照或用户研究；没有“质量提升”“优于基线”的实验证据。
+- 重新核验全部外部来源、新的音视频转录与画面核验。
+
+对比度检查只覆盖列明的不透明色对，不覆盖透明层、渐变、图片背景或所有控件状态。
+
+## 已发布版本
+
+| 版本 | 日期 | 当时的结果 | 原始输出 |
+|---|---|---|---|
+| v0.3.0 | 2026-09-13 | Python 3.12.14；来源、规范、token 同步与包检查通过；47 项测试通过；88/88 声明色对通过（重新设计配色之前） | [v0.3.0 标签下的 reports/](https://github.com/Hai-qq/humanist-frontend/tree/v0.3.0/reports) 中的 `v0.3.0-check-*.log`、`validation.json`；同样包含在 [Release](https://github.com/Hai-qq/humanist-frontend/releases/tag/v0.3.0) 的完整仓库 ZIP 中 |
+| v0.2.0 | 2026-09-08 | Python 3.13.5；同上各项通过，47 项测试，88/88 色对；SKILL.md 用 PyYAML 解析通过；主题数值与 v0.1.0 一致。首次开源整理时另用 Python 3.9.6 复跑通过 | 同一位置的 `VALIDATION-v0.2.0.md`、`*-sync.log`、`unit-tests.log`、`local-*.log`、`OPEN_SOURCE_REVIEW.md` |
+| v0.1.0 | 2026-09-08 | 24 项测试、88/88 色对 | 同一位置的 `history/v0.1.0/` |

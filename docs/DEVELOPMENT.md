@@ -35,7 +35,15 @@ python scripts/build_release.py --output ../releases
 
 输出完整仓库 ZIP、独立 Skill ZIP 与外部 SHA-256 校验文件。两个 ZIP 各带逐文件 `SHA256SUMS`。默认拒绝覆盖；只有确实需要覆盖同名产物时才加 `--overwrite`。输出目录必须在源码目录之外。
 
-同一源码快照、Python/zlib 环境下打包使用固定文件顺序与时间字段；日志变动会正常改变校验值。打包脚本本身不替代测试、浏览器验收或宿主加载。
+同一源码快照、Python/zlib 环境下打包使用固定文件顺序与时间字段；源码变动会正常改变校验值。打包脚本本身不替代测试、浏览器验收或宿主加载。
+
+## 验证记录
+
+仓库只保留 [reports/VALIDATION.md](../reports/VALIDATION.md)：记录日期、环境、命令、结果和未执行项。每次运行的原始输出不提交（`.gitignore` 已排除 `reports/` 下的其他文件），发布时打包成 Release 附件。v0.3.0 及以前的日志保留在对应标签和 Release 的完整仓库 ZIP 中。
+
+根目录 `SHA256SUMS` 与完整仓库 ZIP 内的逐文件清单相同（文件范围由 `build_release.py` 的 `collect()` 决定）。改动文件并打包后，用 `unzip -p ../releases/humanist-frontend-v<版本>.zip humanist-frontend/SHA256SUMS > SHA256SUMS` 更新。
+
+`.claude-plugin/marketplace.json` 的格式由 Claude Code 定义。仓库检查只核对名称与 Skill 路径；改动后可用 `claude plugin validate .` 做格式校验，再设置 `CLAUDE_CONFIG_DIR=<临时目录>` 隔离个人配置，运行 `claude plugin marketplace add .` 与 `claude plugin install humanist-frontend@humanist-frontend` 试装一次。
 
 ## 维护
 
