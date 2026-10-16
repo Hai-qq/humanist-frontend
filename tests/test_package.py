@@ -40,7 +40,7 @@ class ContrastTests(unittest.TestCase):
                 color.luminance(bad)
     def test_all_declared_pairs(self):
         rows = color.evaluate(TOKENS)
-        self.assertEqual(len(rows), 88)
+        self.assertEqual(len(rows), 92)
         self.assertTrue(all(r["passed"] for r in rows))
     def test_comparison_not_rounded(self):
         data = copy.deepcopy(TOKENS)
@@ -79,7 +79,7 @@ class PackageTests(unittest.TestCase):
     def test_cli_json_output(self):
         proc = subprocess.run([sys.executable, str(ROOT / "skills/humanist-frontend/scripts/check_contrast.py"), "--json"], capture_output=True, text=True)
         self.assertEqual(proc.returncode, 0, proc.stderr)
-        self.assertEqual(json.loads(proc.stdout)["total"], 88)
+        self.assertEqual(json.loads(proc.stdout)["total"], 92)
     def test_cli_invalid_input_exit_code(self):
         with tempfile.TemporaryDirectory() as tmp:
             proc = subprocess.run([sys.executable, str(ROOT / "skills/humanist-frontend/scripts/check_contrast.py"), str(Path(tmp) / "absent.json")], capture_output=True, text=True)

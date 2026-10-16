@@ -50,7 +50,7 @@ Humanist 是一项围绕 **Anthropic 与 Kimi 的设计指南、产品案例、�
 <details>
 <summary>可选配色：温暖阅读型与清晰轻盈型</summary>
 
-![使用仓库真实浅色色值绘制的两套主题示例。](docs/assets/themes.svg)
+![使用仓库实际色值绘制的两套主题明暗示例。](docs/assets/themes.svg)
 
 `editorial-warm` 与 `precise-light` 均提供明暗 token，是原创实施起点，不与两家公司一一对应。已有项目优先沿用设计系统，其他风格也可以应用本规范。[Token 使用](docs/TOKENS.md)
 
@@ -94,7 +94,7 @@ python3 scripts/install_skill.py --host kimi --project /path/to/project
 
 [开发与检查](docs/DEVELOPMENT.md) · [评估协议](evals/README.md) · [更新记录](CHANGELOG.md) · [视觉标识](docs/BRAND.md)
 
-当前包检查覆盖生成物同步、引用、安装和归档；包含 47 项测试、88 个声明的纯色色对。[本版验证记录](reports/VALIDATION.md)
+当前包检查覆盖生成物同步、引用、安装和归档；包含 47 项测试、92 个声明的纯色色对。[本版验证记录](reports/VALIDATION.md)
 
 18 个 Agent 场景仍待执行，包检查不代表页面视觉、宿主实机加载或整页 WCAG 验收。欢迎通过[问题反馈](https://github.com/Hai-qq/humanist-frontend/issues/new)提供真实项目中的失败案例；[贡献约定](CONTRIBUTING.md)说明如何补充依据与规则。
 
