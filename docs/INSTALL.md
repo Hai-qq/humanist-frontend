@@ -26,7 +26,7 @@ npx skills add Hai-qq/humanist-frontend
 
 CLI 会克隆本仓库、识别 `skills/humanist-frontend/`，再询问要装给哪些 Agent。常用参数：`-a claude-code`、`-a codex` 指定 Agent，`-g` 装到用户目录，`-y` 跳过确认，`--copy` 复制而不是建软链接。
 
-默认的项目级安装把完整目录放在 `.agents/skills/humanist-frontend/`，Claude Code 的 `.claude/skills/humanist-frontend` 是指向它的软链接，并在项目根目录写入 `skills-lock.json`。这个 CLI 由 [vercel-labs/skills](https://github.com/vercel-labs/skills) 维护，参数、目录以及它自己的网络访问与统计行为以它的文档为准。
+项目级安装会在项目根目录写入 `skills-lock.json`。只选 Claude Code 时，完整目录直接复制到 `.claude/skills/humanist-frontend/`；同时选了 Codex 等共用 `.agents/skills/` 的 Agent 时，完整目录放在 `.agents/skills/humanist-frontend/`，Claude Code 那份是指向它的软链接（加 `--copy` 改为各自复制）。这个 CLI 由 [vercel-labs/skills](https://github.com/vercel-labs/skills) 维护，参数、目录以及它自己的网络访问与统计行为以它的文档为准。
 
 ### Claude Code 插件
 
@@ -37,7 +37,7 @@ CLI 会克隆本仓库、识别 `skills/humanist-frontend/`，再询问要装给
 /plugin install humanist-frontend@humanist-frontend
 ```
 
-也可以在终端运行 `claude plugin marketplace add Hai-qq/humanist-frontend` 和 `claude plugin install humanist-frontend@humanist-frontend`。插件默认装到用户范围，Skill 以 `humanist-frontend:humanist-frontend` 的名字出现。插件不设固定版本号，Claude Code 按提交记录判断更新；第三方市场默认不自动更新，可运行 `/plugin marketplace update humanist-frontend` 手动拉取。
+也可以在终端运行 `claude plugin marketplace add Hai-qq/humanist-frontend` 和 `claude plugin install humanist-frontend@humanist-frontend`。插件默认装到用户范围，Skill 以 `humanist-frontend:humanist-frontend` 的名字出现。插件来源是仓库根目录，Claude Code 会把整个仓库（约 1.7 MB）复制到插件缓存，但只加载其中的 Skill。插件不设固定版本号，Claude Code 按提交记录判断更新；第三方市场默认不自动更新，可运行 `/plugin marketplace update humanist-frontend` 手动拉取。
 
 ### Python 安装器
 

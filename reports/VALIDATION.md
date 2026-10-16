@@ -23,8 +23,11 @@
 | skills CLI 1.7.2 | 在临时空项目运行 `npx skills add Hai-qq/humanist-frontend -a claude-code -a codex -y`，来源为当时的 GitHub main | 识别到 1 个 Skill；完整目录装到 `.agents/skills/humanist-frontend/`，与仓库 `skills/humanist-frontend/` 逐文件一致；`.claude/skills/humanist-frontend` 是指向它的软链接；装好的对比度脚本可运行；用户目录 `~/.agents` 未改动 |
 | skills CLI 1.7.2 | 加入 `.claude-plugin/marketplace.json` 后，对本地仓库运行 `npx skills add <仓库路径> --list` | 仍只识别 1 个 Skill，没有重复 |
 | Claude Code 2.1.289 插件 | 设置 `CLAUDE_CONFIG_DIR=<临时目录>` 隔离个人配置，运行 `claude plugin validate .`（含 `--strict`）、`claude plugin marketplace add <仓库路径>`、`claude plugin install humanist-frontend@humanist-frontend` | 校验通过，安装成功；`claude plugin details` 列出 `Skills (1) humanist-frontend` |
+| skills CLI 1.7.2 | 推送本 PR 分支后，在另一个空项目运行 `npx skills add https://github.com/Hai-qq/humanist-frontend/tree/<分支> -a claude-code -y` | 识别到 1 个 Skill；只选 Claude Code 时直接复制到 `.claude/skills/humanist-frontend/`，与仓库逐文件一致 |
+| Claude Code 2.1.289 插件 | 同样隔离配置，从 GitHub 运行 `claude plugin marketplace add Hai-qq/humanist-frontend@<分支>` 与 `claude plugin install humanist-frontend@humanist-frontend` | 安装成功；版本号取自提交 SHA；缓存中是整个仓库（约 1.7 MB），`claude plugin details` 列出 `Skills (1) humanist-frontend` |
+| README 规则链接 | 用 GitHub 的 HTML 渲染接口取得分支上的 DESIGN_SPEC.md，对照两份 README 里的 7 个规则锚点 | 全部存在 |
 
-这些只说明文件被正确复制、插件被正确登记，没有启动 Agent 会话确认模型会调用这个 Skill。
+这些只说明文件被正确复制、插件被正确登记，没有启动 Agent 会话确认模型会调用这个 Skill。安装测试都在临时目录与隔离配置中进行，结束后不保留。
 
 ### 未执行
 
