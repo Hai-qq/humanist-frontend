@@ -7,3 +7,7 @@ __pycache__/
 venv/
 dist/
 .pytest_cache/
+
+# 逐次检查输出随 Release 附件发布，仓库只保留验证摘要
+reports/*
+!reports/VALIDATION.md

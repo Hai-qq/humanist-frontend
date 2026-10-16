@@ -21,7 +21,8 @@ def validate(root: Path = ROOT) -> list[str]:
                 "research/rule_traceability.json", "research/inputs.json", "evals/cases.json",
                 "skills/humanist-frontend/SKILL.md", "skills/humanist-frontend/LICENSE",
                 "skills/humanist-frontend/references/sources.md",
-                "skills/humanist-frontend/assets/tokens.css", "skills/humanist-frontend/assets/tokens.json"]
+                "skills/humanist-frontend/assets/tokens.css", "skills/humanist-frontend/assets/tokens.json",
+                ".claude-plugin/marketplace.json"]
     for rel in required:
         if not (root / rel).is_file():
             errors.append(f"Missing file: {rel}")
@@ -139,6 +140,15 @@ def validate(root: Path = ROOT) -> list[str]:
                 errors.append(f"Standalone Skill copy differs: {rel}")
         if (root / "research/SOURCE_AUDIT.md").read_bytes() != (root / "skills/humanist-frontend/references/sources.md").read_bytes():
             errors.append("Standalone source audit differs")
+        # README documents `humanist-frontend@humanist-frontend`; keep names and skill paths installable.
+        market = json.loads((root / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
+        if market["name"] != "humanist-frontend" or [p["name"] for p in market["plugins"]] != ["humanist-frontend"]:
+            errors.append("Marketplace names differ from the documented install command")
+        for plugin in market["plugins"]:
+            for rel in plugin.get("skills", []):
+                skill_dir = (root / plugin["source"] / rel).resolve()
+                if not skill_dir.is_relative_to(root) or not (skill_dir / "SKILL.md").is_file():
+                    errors.append(f"Marketplace skill path missing: {rel}")
         inputs = json.loads((root / "research/inputs.json").read_text(encoding="utf-8"))
         for entry in inputs["inputs"]:
             p = (root / entry["archived_path"]).resolve()
@@ -159,5 +169,5 @@ if __name__ == "__main__":
     for error in errors:
         print(error, file=sys.stderr)
     print(f"Local package checks: {'FAILED' if errors else 'PASSED'}")
-    print("Scope: files, local links, versions, source/evaluation traceability, historical hashes, standalone parity and font exclusion.")
+    print("Scope: files, local links, versions, source/evaluation traceability, historical hashes, standalone parity, plugin marketplace paths and font exclusion.")
     raise SystemExit(bool(errors))
