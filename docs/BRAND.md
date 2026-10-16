@@ -20,7 +20,7 @@ README 使用与个人网站一致的主图标展示框和真实文字标题。�
 
 - [humanist-wordmark-v0.3.png](assets/humanist-wordmark-v0.3.png)：内置 ImageGen 生成的 PNG 字标，非矢量字体文件。词形已目视核对，不宣称商标注册或检索完成。
 - [principles.svg](assets/principles.svg)：可编辑的原创原则示例，展示同一研究笔记任务的阅读、组织和失败恢复。
-- [themes.svg](assets/themes.svg)：实际 token 浅色色值的可选主题示意，非品牌复刻或运行中的应用。
+- [themes.svg](assets/themes.svg)：实际 token 明暗色值的可选主题示意，非品牌复刻或运行中的应用。
 
 生成字标的提示词：
 

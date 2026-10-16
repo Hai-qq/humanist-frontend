@@ -21,7 +21,7 @@ python skills/humanist-frontend/scripts/check_contrast.py
 
 来源台账保留 50 条资料记录，并区分正文、节选、未取得材料与共同来源；详见 [覆盖统计](../research/coverage.json) 和 [来源记录](../research/SOURCE_AUDIT.md)。这些是随包研究记录，本次发布仅抽查部分公开页面，未重新核验全部资料。规范中的主题数值属于原创默认，不代表官方 token。
 
-本地检查覆盖结构、生成物一致性、安装、打包及列明的 88 个纯色色对。18 个 Agent 评估场景尚未执行，也未完成宿主实机加载、下游页面视觉、真实输入法或读屏测试。不能据此宣称视觉质量提升或整页 WCAG 合规。
+本地检查覆盖结构、生成物一致性、安装、打包及列明的 92 个纯色色对。18 个 Agent 评估场景尚未执行，也未完成宿主实机加载、下游页面视觉、真实输入法或读屏测试。不能据此宣称视觉质量提升或整页 WCAG 合规。
 
 版本变化见 [CHANGELOG](../CHANGELOG.md)，补读整合过程见 [合并说明](MERGE_NOTES.md)，历史材料保留在 [研究归档](../research/history/README.md)。
 

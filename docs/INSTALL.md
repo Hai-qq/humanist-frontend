@@ -35,6 +35,8 @@ python scripts/install_skill.py --host kimi --project /path/to/project
 
 不要覆盖项目自己的 DESIGN.md、业务代码或全局配置。v0.3.0 重组了设计解释与执行入口，没有改变主题变量数值、CSS 前缀或主题选择方式，不需要因此迁移应用样式。以完整目录替换，避免新版入口引用旧版附属文件。
 
+v0.3.0 之后的版本重新设计了两套主题的色值（见 [更新记录](../CHANGELOG.md)），并新增 `surface-inverse`、`on-inverse`。项目里已经复制了 `tokens.css` 的，升级前先比较差异：editorial-warm 的主要按钮从陶土色改为墨色，`on-action` 随之变化。
+
 ## 调用与范围
 
 可以在正常任务中指定“使用 humanist-frontend”。新建页面按任务选择风格；已有系统默认继承，局部修复不扩成整体改版，只审查就不改源码。
