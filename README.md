@@ -16,11 +16,11 @@ npx skills add Hai-qq/humanist-frontend
 
 | 翻车场景 | 规范要求 | 规则 |
 |---|---|---|
-| 用中文输入法选词时按回车，消息被直接发了出去 | 组合输入进行中，Enter 不能触发提交；处理 compositionstart / compositionend，注意框架合成事件与 nativeEvent 的区别 | [CMP-02](DESIGN_SPEC.md#cmp-02--输入保存与反馈)<br>[CMP-05](DESIGN_SPEC.md#cmp-05--输入建议与执行动作分开) |
-| 保存其实失败了，界面却显示“已保存”；刷新后草稿没了 | 区分未保存、保存中、已保存、失败；不在 `setTimeout` 后无条件显示“已保存”；失败时说明输入是否保留、能否重试 | [CMP-02](DESIGN_SPEC.md#cmp-02--输入保存与反馈) |
-| 点了“停止”，界面写着已停止，后台任务还在跑 | “停止显示输出”和“取消执行”分开；取消先进入 cancelling，收到执行端确认才显示 cancelled | [AGT-04](DESIGN_SPEC.md#agt-04--快速结果不是取消任务的别名)<br>[AGT-01](DESIGN_SPEC.md#agt-01--长任务有可理解的状态模型) |
-| 中文正文照搬英文的行高、字距和全大写标签 | 中文正文默认不加字距、不套 ALL CAPS；阅读正文行高从 1.7 起，阅读栏先试 32–42em，再用真实内容检验 | [TYP-02](DESIGN_SPEC.md#typ-02--中文不能套用英文字体微调)<br>[TYP-01](DESIGN_SPEC.md#typ-01--字体按职责选择) |
-| 自动生成的标题，覆盖了用户刚改好的名字 | 正文保存与标题生成可以各自失败；用户手动改名后，迟到的生成结果不能覆盖；对象已切换或删除时丢弃旧结果 | [CMP-04](DESIGN_SPEC.md#cmp-04--自动命名是可编辑的辅助元数据) |
+| 用中文输入法选词时按回车，消息被直接发了出去 | 组合输入进行中，Enter 不能触发提交；处理 compositionstart / compositionend，注意框架合成事件与 nativeEvent 的区别 | [CMP‑02](DESIGN_SPEC.md#cmp-02--输入保存与反馈)<br>[CMP‑05](DESIGN_SPEC.md#cmp-05--输入建议与执行动作分开) |
+| 保存其实失败了，界面却显示“已保存”；刷新后草稿没了 | 区分未保存、保存中、已保存、失败；不在 `setTimeout` 后无条件显示“已保存”；失败时说明输入是否保留、能否重试 | [CMP‑02](DESIGN_SPEC.md#cmp-02--输入保存与反馈) |
+| 点了“停止”，界面写着已停止，后台任务还在跑 | “停止显示输出”和“取消执行”分开；取消先进入 cancelling，收到执行端确认才显示 cancelled | [AGT‑04](DESIGN_SPEC.md#agt-04--快速结果不是取消任务的别名)<br>[AGT‑01](DESIGN_SPEC.md#agt-01--长任务有可理解的状态模型) |
+| 中文正文照搬英文的行高、字距和全大写标签 | 中文正文默认不加字距、不套 ALL CAPS；阅读正文行高从 1.7 起，阅读栏先试 32–42em，再用真实内容检验 | [TYP‑02](DESIGN_SPEC.md#typ-02--中文不能套用英文字体微调)<br>[TYP‑01](DESIGN_SPEC.md#typ-01--字体按职责选择) |
+| 自动生成的标题，覆盖了用户刚改好的名字 | 正文保存与标题生成可以各自失败；用户手动改名后，迟到的生成结果不能覆盖；对象已切换或删除时丢弃旧结果 | [CMP‑04](DESIGN_SPEC.md#cmp-04--自动命名是可编辑的辅助元数据) |
 
 规范共 42 条规则，按目标与证据（CTX）、视觉与排版（VIS、TYP、LAY）、组件与长任务（CMP、AGT）、实施流程（RUN）、可访问性与验收（A11Y、QA）等分组，每条写明依据、适用条件和检查方法。全文见 [DESIGN_SPEC.md](DESIGN_SPEC.md)。
 
