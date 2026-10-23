@@ -4,7 +4,7 @@
 
 ## v0.3.0 之后的未发布改动
 
-2026-10-16，macOS（Darwin 25.6.0），Python 3.13.5。GitHub Actions 另在 Python 3.10 与 3.13 上运行这七项。
+2026-10-16，macOS（Darwin 25.6.0），Python 3.13.5。2026-10-23 合并 main、把 reports/ 下的逐次日志排除出打包范围后，在同一环境重跑七项，结果不变。GitHub Actions 另在 Python 3.10 与 3.13 上运行这七项。
 
 | 检查 | 命令 | 结果 |
 |---|---|---|
