@@ -25,6 +25,9 @@ def collect(root: Path) -> dict[str, bytes]:
             continue
         if rel.parts[0] not in ROOT_FILES | ROOT_DIRS:
             continue
+        # Per-run logs under reports/ are git-ignored release attachments; only the summary is archived.
+        if rel.parts[0] == "reports" and rel.as_posix() != "reports/VALIDATION.md":
+            continue
         if path.is_symlink():
             raise ValueError(f"Refusing symlink in release inputs: {rel}")
         if path.is_file():

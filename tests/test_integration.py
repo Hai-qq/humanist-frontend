@@ -174,13 +174,14 @@ class ArchiveTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             releaser.build(ROOT, ROOT / "output")
 
-    def test_local_caches_and_environment_files_are_excluded(self):
+    def test_local_caches_environment_files_and_report_logs_are_excluded(self):
         with tempfile.TemporaryDirectory() as tmp:
-            r = Path(tmp);(r/"scripts/__pycache__").mkdir(parents=True);(r/"research").mkdir()
+            r = Path(tmp);(r/"scripts/__pycache__").mkdir(parents=True);(r/"research").mkdir();(r/"reports").mkdir()
             (r/"scripts/__pycache__/private.pyc").write_bytes(b"cache")
             (r/"research/.env.local").write_text("secret")
+            (r/"reports/contrast.log").write_text("run log");(r/"reports/VALIDATION.md").write_text("summary")
             (r/"README.md").write_text("public")
-            self.assertEqual(releaser.collect(r), {"README.md":b"public"})
+            self.assertEqual(releaser.collect(r), {"README.md":b"public", "reports/VALIDATION.md":b"summary"})
 
     def test_release_rejects_font_files(self):
         with tempfile.TemporaryDirectory() as tmp:
