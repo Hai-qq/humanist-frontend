@@ -9,8 +9,8 @@ import sys
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {".git", ".venv", "venv", "__pycache__", ".pytest_cache", "node_modules", "dist"}
-ROOT_FILES = {".gitignore", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "CHANGELOG.md", "DESIGN_SPEC.md", "release.json"}
-ROOT_DIRS = {".github", "skills", "research", "reports", "scripts", "tests", "evals", "docs"}
+ROOT_FILES = {".gitignore", "README.md", "README.en.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "CHANGELOG.md", "DESIGN_SPEC.md", "release.json"}
+ROOT_DIRS = {".github", ".claude-plugin", "skills", "research", "reports", "scripts", "tests", "evals", "docs"}
 FONT_EXTENSIONS = {".ttf", ".otf", ".woff", ".woff2"}
 
 
@@ -24,6 +24,9 @@ def collect(root: Path) -> dict[str, bytes]:
         if any(part.startswith(".env") for part in rel.parts) or path.name == ".DS_Store" or path.suffix in {".pyc", ".pyo"}:
             continue
         if rel.parts[0] not in ROOT_FILES | ROOT_DIRS:
+            continue
+        # Per-run logs under reports/ are git-ignored release attachments; only the summary is archived.
+        if rel.parts[0] == "reports" and rel.as_posix() != "reports/VALIDATION.md":
             continue
         if path.is_symlink():
             raise ValueError(f"Refusing symlink in release inputs: {rel}")

@@ -9,7 +9,7 @@ body:
     id: environment
     attributes:
       label: 版本与环境 / Version and environment
-      description: 项目版本或提交、操作系统、相关运行时或 Agent 宿主。
+      description: 项目版本或提交、安装方式（skills CLI / Claude Code 插件 / Python 安装器 / 手工复制）、操作系统、相关运行时或 Agent 宿主。
     validations:
       required: true
   - type: textarea
